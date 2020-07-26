@@ -1,10 +1,13 @@
 \documentclass[10pt]{res}
-% \usepackage[lighttt]{lmodern}
-\usepackage{amsmath,amssymb}
 % \usepackage[hidelinks]{hyperref}
-\usepackage{gentium}
-\usepackage{newpxmath}
-\usepackage[varqu]{zi4}
+% \usepackage[lighttt]{lmodern}
+% \usepackage{gentium}
+% \usepackage[varqu]{zi4}
+% \usepackage[sb]{libertine}
+% \usepackage[libertine,varg,varvw,vvarbb]{newtxmath}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\usepackage[upint]{stix2}
 \usepackage{fontawesome}
 \renewcommand{\baselinestretch}{0.95}
 \newsectionwidth{0pt}  % So the text is not indented under section headings
@@ -13,8 +16,8 @@
 \vspace*{-50pt}
 \name{\LARGE Carlos Salinas\\[12pt]} % the \\[12pt] adds a blank line after name
 
-\address{7507 Camelot Dr. \\ Mission, TX 78572\\
-  \faPhone~765-337-9606}%
+\address{\small7507 Camelot Dr. \\ \small Mission, TX 78572\\
+  \small\faPhone~765-337-9606}%
   % \faPhone~\href{tel:17653379606}{765-337-9606}%
 \address{
   \small\faEnvelope~\texttt{cemiliosal@gmail.com, salinac@purdue.edu}\\
@@ -36,10 +39,10 @@
   %%%% NEW SECTION
   \vspace{-10pt}
   \section{SKILLS}
-  \emph{Programming languages}: Scheme, Common Lisp, Python, R, C, Java, Octave/MATLAB \\
+  \emph{Programming languages}: Lisp, Python, R, C, Java, Octave/MATLAB \\
   \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
   \emph{R packages}: ggplot, shiny, tidyverse, dplyr, forcats, modelr, broom\\
-  \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, LibreOffice, Google Docs\\
+  \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Wolfram Mathematica, LibreOffice, Google Docs\\
   \emph{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
   \emph{Natural languages}: English, Spanish, Russian, Persian/Farsi
 
@@ -71,11 +74,11 @@
       \item Presented results at Howard University's Workshop on Character Varieties and Geometric Structures.
   \end{itemize}
   \vspace{-10pt}
-  \emph{EAGL System Admin} \hfill  September 2013-May 2014\\
+  \emph{Experimental Algebra and Geometry Lab System Admin} \hfill  September 2013-May 2014\\
   University of Texas--Pan American, Department of Mathematics,
   Edinburg, TX
   \begin{itemize} \itemsep -3pt %reduce space between items
-    \item Admin for the department's Experimental Algebra \& Geometry Lab's Fedora cluster.
+    \item Admin for the department's Experimental Algebra and Geometry Lab's Fedora cluster.
     \item Operated and updated lab's $3$D printer.
     \item Engaged with local schools in math related outreach activities.
   \end{itemize}
@@ -107,7 +110,8 @@
   PI4 Computational Bootcamp, University of Illinois Urbana-Champaign
   \begin{itemize}\itemsep -3pt
     \item Wrote R code together with a team to analyze and predict trends in book-reading.
-    \item Modeled the \emph{popularity} of well-known authors such as Stephen King using R's modelr package.
+    \item Modeled the \emph{popularity} of well-known authors using R's modelr
+      package.
   \end{itemize}
   \vspace{-10pt}
   \emph{The Black--Scholes model as an application of Itô calculus}\hfill
@@ -118,10 +122,10 @@
   \end{itemize}
   \vspace{-10pt}
   \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
-  Machine Learning \& Information Processing Reading Group, Purdue University,  West Lafayette, IN
+  Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
   \begin{itemize} \itemsep -3pt
     \item Introduced the audience to a foundational result in the study of artificial neural networks.
-    \item Proved the necessary corollaries to show that sigmoidal functions can approximate any continuous function.
+    \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
   \end{itemize}
   \vspace{-10pt}
   \emph{The Bott periodicity theorem}\hfill Fall 2017\\
