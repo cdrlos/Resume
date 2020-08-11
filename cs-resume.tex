@@ -1,22 +1,32 @@
 \documentclass[10pt]{res}
 \usepackage[hidelinks]{hyperref}
-% \usepackage[lighttt]{lmodern}
-\usepackage{gentium}
-% \usepackage[varg]{newtxmath}
-% \usepackage[upint]{stix2}
-\usepackage[varqu]{zi4}
+\usepackage{unicode-math}
+\setmainfont{STIX Two Text}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Inconsolatazi4}
+\setmathfont[StylisticSet=8]{STIX Two Math}
+
 \usepackage{fontawesome}
+\newfontfamily{\FAFR}{Font Awesome 5 Free Regular}
+\newfontfamily{\FAFS}{Font Awesome 5 Free Solid}
+\newfontfamily{\FAB}{Font Awesome 5 Brands Regular}\def\faEmail{{\FAFR \symbol{"F0E0}}} % Email
+\def\faPhone{\FAFS \symbol{"F095}} % Phone
+\def\faLinkedin{\FAB \symbol{"F08C}} % Linkedin
+\def\faGithub{\FAB \symbol{"F09B}} % Github
+\def\faStackOverflow{\FAB \symbol{"F16C}} % StackOverflow
+
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.75in}
 \renewcommand{\baselinestretch}{0.95}
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 
 \begin{document}
-\vspace*{-50pt}
 \name{\LARGE Carlos Salinas\\[12pt]} % the \\[12pt] adds a blank line after name
 
 \address{\small7507 Camelot Dr. \\ \small Mission, TX, 78572\\
-  \faPhone~\href{tel:17653379606}{765-337-9606}}%
+  \small\faPhone~\href{tel:17653379606}{\textnormal{765-337-9606}}}%
 \address{
-  \faEnvelope~\texttt{\href{mailto:cemiliosal@gmail.com}{cemiliosal@gmail.com}, \href{mailto:salinac@purdue.edu}{salinac@purdue.edu}}\\
+  \small\faEnvelope~\texttt{\href{mailto:cemiliosal@gmail.com}{cemiliosal@gmail.com}, \href{mailto:salinac@purdue.edu}{salinac@purdue.edu}}\\
   \small\faLinkedin~\url{https://www.linkedin.com/in/carlos-salinas-64588b160}\\
   \small\faGithub~\url{https://github.com/cdrlos}}%
 \begin{resume}%

@@ -1,9 +1,20 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
-% \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-% \usepackage[lighttt]{lmodern}   % uses new century schoolbook postscript font
-\usepackage[upint]{stix2}
+\usepackage[hidelinks]{hyperref}
+\usepackage{unicode-math}
+\setmainfont{STIX Two Text}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Inconsolatazi4}
+\setmathfont[StylisticSet=8]{STIX Two Math}
+
 \usepackage{fontawesome}
+\newfontfamily{\FAFR}{Font Awesome 5 Free Regular}
+\newfontfamily{\FAFS}{Font Awesome 5 Free Solid}
+\newfontfamily{\FAB}{Font Awesome 5 Brands Regular}\def\faEmail{{\FAFR \symbol{"F0E0}}} % Email
+\def\faPhone{\FAFS \symbol{"F095}} % Phone
+\def\faLinkedin{\FAB \symbol{"F08C}} % Linkedin
+\def\faGithub{\FAB \symbol{"F09B}} % Github
+\def\faStackOverflow{\FAB \symbol{"F16C}} % StackOverflow
 
 % the following commands control the margins:
 \topmargin=-1in    % Make letterhead start about 1 inch from top of page
@@ -20,17 +31,11 @@
 \signature{Carlos Salinas}                  % name for signature
 \address{
   Carlos Salinas \\
-  104 S 3rd St Apt 201\\
-  Lafayette, IN 47901\\
-  {\faPhone~(+1) 765-337-9606% \href{tel:+17653379606}{(+1) 765-337-9606}}
-}
- 
+  7507 Camelot Dr\\
+  Mission, TX, 78572\\
+  \href{tel:+17653379606}{(+1) 765-337-9606}\\[-20pt]}
+
 \begin{letter}{
-    % Ms. Terri Roberts \\
-    % Senior Staff Recruiter \\
-    % XYZ Corporation \\
-    % Rt. 56 \\
-    % Anytown, New Jersey 05867
     Intelligence \& Security\\
     BAE Systems\\
     8201 Greensboro Dr \# 1200,\\
