@@ -1,20 +1,9 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
 \usepackage[hidelinks]{hyperref}
-\usepackage{unicode-math}
-\setmainfont{STIX Two Text}
-\setsansfont{Latin Modern Sans}
-\setmonofont{Inconsolatazi4}
-\setmathfont[StylisticSet=8]{STIX Two Math}
-
+\usepackage{stix2}
+\usepackage{zi4}
 \usepackage{fontawesome}
-\newfontfamily{\FAFR}{Font Awesome 5 Free Regular}
-\newfontfamily{\FAFS}{Font Awesome 5 Free Solid}
-\newfontfamily{\FAB}{Font Awesome 5 Brands Regular}\def\faEmail{{\FAFR \symbol{"F0E0}}} % Email
-\def\faPhone{\FAFS \symbol{"F095}} % Phone
-\def\faLinkedin{\FAB \symbol{"F08C}} % Linkedin
-\def\faGithub{\FAB \symbol{"F09B}} % Github
-\def\faStackOverflow{\FAB \symbol{"F16C}} % StackOverflow
 
 % the following commands control the margins:
 \topmargin=-1in    % Make letterhead start about 1 inch from top of page
@@ -27,51 +16,37 @@
 
 \begin{document}
 
-
 \signature{Carlos Salinas}                  % name for signature
 \address{
   Carlos Salinas \\
   7507 Camelot Dr\\
   Mission, TX 78572\\
-  \href{tel:+17653379606}{(+1) 765-337-9606}}
+  % \href{tel:+17653379606}
+  {(+1) 765-337-9606}\\[-15pt]}
 
 \begin{letter}{
-    Intelligence \& Security\\
-    Duolingo\\
-    5900 Penn Ave,\\
-    Pittsburgh, PA 15206
+DHR Health\\
+5501 S McColl Rd,\\
+Edinburg, TX 78539
 }
 
 \vfill % forces letterhead to top of page
 
-\opening{Dear Hiring Team at Duolingo,}
-\noindent I am applying for the Software Engineer Intern position at Duolingo.
+\opening{Dear HR Department at DHR Health,}
+\noindent I am applying for the Institutional Research Analyst position at DHR Health.
 
-Having grown up near the border between the United States and Mexico and
-frequently commuting between the two countries to visit relatives, I had the
-privilege of being exposed to two different languages and in my youth would
-spend a great deal of time making note the similarities and differences between
-the two; and later, after discovering the wonderful resource that is Wikipedia,
-between Indo-European languages at large. This interest really took off in
-university where I took an intensive course in Russian. The course emphasized
-correct pronunciation to the point that they devoted office hours and entire
-exam sections to it. And I loved it! The grammar, the history, the phonology,
-the poetry, all of it. Especially the phonology. From the emphatic consonants of
-Arabic to the prosody induced by the vowel harmony in Turkish, I love the
-diversity of sounds in foreign languages; it is quite literally music to my
-ears.
-
-Language has always been at the root of what interests me. I find that even my
-choice of major in university, Mathematics, was influenced by the language of
-the mathematician; a precise, unambiguous, symbolic language capable of
-expressing ideas which in natural language can quickly become tedious.
-
-As for what I bring to the table, dear Duolingo staff, I am enthusiastic about
-language learning, yes, but I also have excellent knowledge of numerical
-analysis, numerical PDEs, and probability as well as adequate knowledge of
-machine learning, neural networks, image processing, and more recent experience
-in data science/data wrangling statistical modeling I believe my qualifications
-are sufficient for interning at your company.
+I recently graduated and am looking to put my problem solving skills to good use
+and your college seems like just the place to start my career. I have 6 years of
+experience working as a teaching assistant. As part of this work I managed
+students' grades and employed a variety of heuristic statistical methods on them
+to determine midterm curves and cut-off ranges for final grades. Moreover, I
+have an excellent background in mathematics, particularly in the field of
+geometry and abstract algebra but also in applied topics such as numerical
+analysis, PDEs, and numerical linear algebra. I also have adequate experience
+with linear regression, analysis of variance, neural networks, machine learning,
+and computer systems and have used these skills to analyze several datasets
+using R and SQL. I am excited by the prospect of using my skills to make a
+tangible impact in the world and in my locality.
 
 \closing{Hope to hear from you soon,}
 \encl{cs-resume.pdf}

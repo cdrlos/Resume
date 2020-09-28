@@ -1,0 +1,19 @@
+TA
+
+• Instructed undergraduate calculus 2.
+• Held recitation and office hours for calculus 1, 2, and 3 courses.
+• Assigned final scores based on the student’s cumulative performance using spread sheets.
+• Graded differential equations and linear algebra courses at the undergraduate and graduate level.
+• Created and updated a university website to post notes and solutions to recitation related problems.
+
+RA
+• Wrote Mathematica code to study traces in character varieties.
+• Discovered a possible correspondence between 2-special pairs and pairs of orientable necklaces.
+• Published the associated sequence in the On-line Encyclopedia of Integer Sequences under A237623.
+• Presented results at Howard University’s Workshop on Character Varieties and Geometric Structures.
+
+Admin
+• Administrated the department’s Experimental Algebra and Geometry Lab’s Fedora cluster.
+• Maintained an operational CUDALink computing station for doing Mathematica simulations.
+• Operated and updated the lab’s 3D printer.
+• Engaged with local schools in math and geometry related outreach activities.

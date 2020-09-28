@@ -1,19 +1,8 @@
-\documentclass[10pt]{res}
+\documentclass{res}
 \usepackage[hidelinks]{hyperref}
-\usepackage{unicode-math}
-\setmainfont{STIX Two Text}
-\setsansfont{Latin Modern Sans}
-\setmonofont{Inconsolatazi4}
-\setmathfont[StylisticSet=8]{STIX Two Math}
-
+\usepackage{stix2}
+\usepackage{inconsolata}
 \usepackage{fontawesome}
-\newfontfamily{\FAFR}{Font Awesome 5 Free Regular}
-\newfontfamily{\FAFS}{Font Awesome 5 Free Solid}
-\newfontfamily{\FAB}{Font Awesome 5 Brands Regular}\def\faEmail{{\FAFR \symbol{"F0E0}}} % Email
-\def\faPhone{\FAFS \symbol{"F095}} % Phone
-\def\faLinkedin{\FAB \symbol{"F08C}} % Linkedin
-\def\faGithub{\FAB \symbol{"F09B}} % Github
-\def\faStackOverflow{\FAB \symbol{"F16C}} % StackOverflow
 
 \addtolength{\topmargin}{-.75in}
 \addtolength{\textheight}{1.75in}
@@ -21,69 +10,74 @@
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 
 \begin{document}
-\name{\LARGE Carlos Salinas\\[12pt]} % the \\[12pt] adds a blank line after name
-
-\address{\small7507 Camelot Dr. \\ \small Mission, TX 78572\\
-  \small\faPhone~\href{tel:17653379606}{\textnormal{765-337-9606}}}%
-\address{
-  \small\faEnvelope~\texttt{\href{mailto:cemiliosal@gmail.com}{cemiliosal@gmail.com}, \href{mailto:salinac@purdue.edu}{salinac@purdue.edu}}\\
-  \small\faLinkedin~\url{https://www.linkedin.com/in/carlos-salinas-64588b160}\\
-  \small\faGithub~\url{https://github.com/cdrlos}}%
+\name{\LARGE Carlos Salinas\\[5pt]} % the \\[12pt] adds a blank line after name
+\address{\small
+  \setlength{\tabcolsep}{2pt}
+  \begin{tabular}{ll}
+    Address:&7507 Camelot Dr, Mission, TX 78572\\
+    Mobile:&765-337-9606\\
+    E-Mail:&\texttt{cemiliosal@gmail.com}
+    \end{tabular}
+}
 \begin{resume}%
-
-  %%%% NEW SECTION
-  \vspace{-10pt}
+  \vspace{-5pt}
   \section{EDUCATION}
   \emph{Master of Science,} Mathematics \hfill August 2020\\
   Purdue University, West Lafayette, IN\\ GPA 3.73\\[3pt]
   \emph{Bachelor of Science,} Mathematics\hfill May 2014\\
   University of Texas--Pan American, Edinburg, TX\\ GPA 3.86
-
   %%%% NEW SECTION
-  \vspace{-10pt}
+  \vspace{-5pt}
   \section{SKILLS}
-  \emph{Programming languages}: Lisp, Python, R, C, Java, Octave/MATLAB \\
+  \emph{Programming languages}: Lisp, Python, R, C, Octave/MATLAB, Java \\
   \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
-  \emph{R packages}: ggplot, shiny, tidyverse, dplyr, forcats, modelr, broom\\
-  \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Wolfram Mathematica, LibreOffice, Google Docs\\
-  \emph{Operating systems}: Linux (Debian, Fedora, Gentoo), FreeBSD, Windows\\
-  \emph{Natural languages}: English, Spanish, Russian, Persian/Farsi
-
+  \emph{R packages}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
+  \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
+  \emph{Operating systems}: Linux, FreeBSD, Windows\\
+  \emph{Languages}: English (Native), Spanish (Native), Russian (Fluent), Persian (Conversant)
   %%%% NEW SECTION
-  \vspace{-10pt}
-  \section{EXPERIENCE}
+  \vspace{-5pt}
+  \section{RELEVANT EXPERIENCE}
   \emph{Teaching Assistant}\hfill August 2014-May 2020\\
   Department of Mathematics, Purdue University, West Lafayette, IN
   \begin{itemize} \itemsep -3pt
-    \item Instructed undergraduate calculus 2.
-    \item Held recitation and office hours for calculus 1, 2, and 3 courses.
-    \item Assigned final scores based on the student's cumulative performance using spread sheets.
-    \item Graded differential equations and linear algebra courses at the
-      undergraduate and graduate level.
-      \item Created and updated a \href{https://www.math.purdue.edu/~salinac}{university website} to post notes and solutions to
-      recitation related problems.
+    \item Lead several recitation classes for undergraduate level calculus 1, 2, and 3.
+    \item Lectured two calculus 2 classes.
+    \item Recorded and analyzed student's scores using tools such as MS Excel.
+    \item Graded differential equations and linear algebra at the undergraduate and graduate level.
+    \item Maintained a university-associated
+      % \href{https://www.math.purdue.edu/~salinac}
+      {website} where course
+      material such as notes and solutions were uploaded.
+    % \item Instructed undergraduate calculus 1, 2, and 3.
+    % \item Analyzed and assigned student's cummulative work.
+    % \item Graded differential equations and linear algebra courses at the
+    %   undergraduate and graduate level.
+    % \item Uploaded notes and solutions to course related material to university associated
+    %   \href{https://www.math.purdue.edu/~salinac}{website}.
   \end{itemize}
-   \vspace{-10pt}
+  \vspace{-7pt}
   \emph{Research Assistant} \hfill September 2013-May 2014 \\
   University of Texas--Pan American, Department of Mathematics,
   Edinburg, TX
   \begin{itemize} \itemsep -3pt %reduce space between items
     % \item Studied $2$-special pairs in the free group on two generators under the supervision of Dr.\ S.D.\ Lawton.
-    \item Wrote Mathematica code to study traces in character varieties.
-    \item Discovered a possible correspondence between $2$-special pairs and
-      pairs of orientable necklaces.
-      \item Published the associated sequence in the On-line Encyclopedia of Integer Sequences under \href{https://oeis.org/A237623}
+    \item Wrote algorithms in Mathematica to study the trace of representations in character varieties.
+    \item Discovered a correspondence between so-called $2$-special pairs and pairs of
+      orientable necklaces.
+    \item Published the associated sequence in the On-line Encyclopedia of
+      Integer Sequences under % \href{https://oeis.org/A237623}
       {A237623}.
       \item Presented results at Howard University's Workshop on Character Varieties and Geometric Structures.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   \emph{Experimental Algebra and Geometry Lab System Admin} \hfill  September 2013-May 2014\\
   University of Texas--Pan American, Department of Mathematics,
   Edinburg, TX
   \begin{itemize} \itemsep -3pt %reduce space between items
-    \item Administrated the department's Experimental Algebra and Geometry Lab's Fedora cluster.
-    \item Maintained an operational CUDALink computing station for doing Mathematica simulations.
-    \item Operated and updated the lab's $3$D printer.
+    \item Operated the department's Experimental Algebra and Geometry Lab.
+    \item Maintained an operational CUDALink computing workstation for doing Mathematica simulations.
+    \item Managed the lab's 3D printer.
     \item Engaged with local schools in math and geometry related outreach activities.
   \end{itemize}
   % \emph{Summer Research Opportunity Program} \hfill June-August 2010 \\
@@ -96,7 +90,7 @@
   %     methods to obtain better shape-memory properties.
   % \end{itemize}
   %%%% NEW SECTION
-  % \vspace{-10pt}
+  % \vspace{-7pt}
   % \section{RELEVANT COURSEWORK}
   % \emph{Wavelet image compression} \hfill
   % September-December 2015\\
@@ -108,59 +102,58 @@
   % \end{itemize}
 
   %%%% NEW SECTION
-  \vspace{-10pt}
+  \vspace{-5pt}
   \section{TALKS}
   \emph{Trends in book-reading over the years}\hfill Summer 2020\\
-  PI4 Computational Bootcamp, University of Illinois Urbana-Champaign
+  PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
   \begin{itemize}\itemsep -3pt
     \item Wrote R code together with a team to analyze and predict trends in book-reading.
     \item Modeled the \emph{popularity} of well-known authors using R's modelr
       package.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   \emph{The Black--Scholes model as an application of Itô calculus}\hfill
   Summer 2019\\
   Student Analysis Seminar, Department of Mathematics, Purdue University
   \begin{itemize} \itemsep -3pt
     \item Introduced the audience to the Black--Scholes model and solved it using the Feymann--Kac formula.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
   Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
   \begin{itemize} \itemsep -3pt
     \item Introduced the audience to a foundational result in the study of artificial neural networks.
     \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   \emph{The Bott periodicity theorem}\hfill Fall 2017\\
   Student Colloquium Department of Mathematics, Purdue University, West Lafayette, IN
   \begin{itemize} \itemsep -3pt
     \item Proved the Bott periodicity theorem from the perspective of classifying space theory.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   \emph{Wavelet image compression} \hfill
   Fall 2015\\
   Department of Mathematics, Purdue University, West Lafayette, IN
   \begin{itemize} \itemsep -3pt
     \item Debugged and documented C code for wavelet image compression.
-    \item Presented on the algorithm behind the compression code together with a
-      team.
+    \item Gave a talk on the algorithm behind the compression code together with a team.
   \end{itemize}
-  \vspace{-10pt}
+  \vspace{-7pt}
   % \emph{Introduction to geometric group theory}\\
   % Department of Mathematics, Purdue University, West Lafayette, IN
   % \begin{itemize} \itemsep -3pt
   %   \item Gave a short introduction to geometric group theory with examples primarily in the modular group.
   % \end{itemize}
 
-  % \vspace{-10pt}
+  % \vspace{-7pt}
   % \emph{Making graphics for your students in TikZ and Asymptote}\\
   % Department of Mathematics, Purdue University, West Lafayette, IN
   % \begin{itemize} \itemsep -3pt
   %   \item Introduced participants to TikZ/Asymptote for creating simple graphics which can be easily included in a Latex project.
   % \end{itemize}
   %%%% NEW SECTION
-  % \vspace{-10pt}
+  % \vspace{-7pt}
   % \section{CURRENT PROJECTS}
 \end{resume}
 \end{document}
