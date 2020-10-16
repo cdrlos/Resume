@@ -1,9 +1,18 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
 \usepackage[hidelinks]{hyperref}
-\usepackage{stix2}
-\usepackage{zi4}
-\usepackage{fontawesome}
+
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[activate={true,nocompatibility},
+            final,
+            tracking=true,
+            kerning=true,
+            spacing=true,
+            factor=1100,
+            stretch=10,
+            shrink=10]{microtype}
 
 % the following commands control the margins:
 \topmargin=-1in    % Make letterhead start about 1 inch from top of page
