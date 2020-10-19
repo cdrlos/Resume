@@ -1,14 +1,7 @@
 \documentclass{res}
 \usepackage[hidelinks]{hyperref}
-<<<<<<< HEAD
 \usepackage{lmodern}
 \renewcommand{\familydefault}{\sfdefault}
-=======
-
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\sfdefault}
-
->>>>>>> 55dd6caaa72df75aa784c58f7238426ec7a48ad3
 \usepackage[activate={true,nocompatibility},
             final,
             tracking=true,
@@ -22,6 +15,9 @@
 \addtolength{\textheight}{1.75in}
 \renewcommand{\baselinestretch}{0.95}
 \newsectionwidth{0pt}  % So the text is not indented under section headings
+
+\newcommand{\Cpp}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 
 \begin{document}
 \name{\LARGE Carlos Salinas\\[5pt]} % the \\[12pt] adds a blank line after name
@@ -43,11 +39,11 @@
   %%%% NEW SECTION
   \vspace{-5pt}
   \section{SKILLS}
-  \emph{Programming languages}: Python, R, Matlab, C, C++, Java, Common Lisp\\
+  \emph{Programming languages}: Python, R, Matlab/Octave, \Cpp, C, Java, Common Lisp\\
   \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
   \emph{R packages}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
   \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
-  \emph{Operating systems}: Linux (Debian, Fedora, Gentoo, and more), FreeBSD, Windows\\
+  \emph{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
   \emph{Languages}: English (Native), Spanish (Native), Russian (Fluent), Persian (Conversant)
   %%%% NEW SECTION
   \vspace{-5pt}
@@ -56,12 +52,12 @@
   Department of Mathematics, Purdue University, West Lafayette, IN
   \begin{itemize} \itemsep -3pt
     \item Led two to three recitation sessions per semester for one of Purdue's calculus 1, 2, or 3 courses.
-    \item Uploaded students' scores to web-based academic software such as BlackBoard.
+    \item Uploaded students' scores to web-based academic software such as BlackBoard or Pearson's MyLab.
     \item Analyzed students' performance on homework, quizzes, and midterms using spreadsheet software.
     \item Graded differential equations and linear algebra homework at the undergraduate and graduate level.
     \item Maintained a university associated
     % \href{https://www.math.purdue.edu/~salinac}
-      {website} where to which I uploaded relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics.
+      {website} where I uploaded relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics.
   \end{itemize}
   \vspace{-7pt}
   \emph{Experimental Algebra and Geometry Lab System Admin/Research Assistant} \hfill September 2013-May 2014 \\
@@ -70,9 +66,9 @@
   \begin{itemize} \itemsep -3pt %reduce space between items
     \item Administrated the lab's Fedora cluster which included installing hardware, configuring the network, and installing and updating software.
     \item Maintained an operational CUDA computing workstation for doing parallel numerical simulations.
-    \item Upkept the lab's 3D printer.
+    \item Kept the lab's 3D printer in functioning shape by updating relevant software, cleaning extruder mishaps, and replacing and ordering filament.
     \item Engaged with local schools in math and geometry related outreach activities.
-    \item Wrote algorithms in Mathematica to study the trace of representations in character varieties.
+    \item Wrote algorithms in Mathematica to study the trace of representations in character varieties taking advantage of the cyclic property of the trace operator.
     \item Discovered a correspondence between so-called $2$-special pairs and pairs of
       orientable necklaces.
     \item Published the associated sequence in the On-line Encyclopedia of
