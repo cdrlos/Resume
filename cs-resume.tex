@@ -1,10 +1,15 @@
 \documentclass{res}
 \usepackage[hidelinks]{hyperref}
-\usepackage{stix2}
-\usepackage{inconsolata}
-% \usepackage[lighttt]{lmodern}
-\usepackage{fontawesome}
-\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[activate={true,nocompatibility},
+            final,
+            tracking=true,
+            kerning=true,
+            spacing=true,
+            factor=1100,
+            stretch=10,
+            shrink=10]{microtype}
 
 \addtolength{\topmargin}{-.75in}
 \addtolength{\textheight}{1.75in}
@@ -24,7 +29,7 @@
 \begin{resume}%
   \vspace{-5pt}
   \section{EDUCATION}
-  \emph{Master of Science/ABD PhD,} Mathematics \hfill August 2020\\
+  \emph{Master of Science,} Mathematics \hfill August 2020\\
   Purdue University, West Lafayette, IN\\ GPA 3.73\\[3pt]
   \emph{Bachelor of Science,} Mathematics\hfill May 2014\\
   University of Texas--Pan American, Edinburg, TX\\ GPA 3.86
@@ -35,7 +40,7 @@
   \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
   \emph{R packages}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
   \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
-  \emph{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
+  \emph{Operating systems}: Linux (Debian, Fedora, Gentoo, and more), FreeBSD, Windows\\
   \emph{Languages}: English (Native), Spanish (Native), Russian (Fluent), Persian (Conversant)
   %%%% NEW SECTION
   \vspace{-5pt}
