@@ -1,9 +1,9 @@
-\documentclass{res}
+\documentclass[10pt]{res}
 \usepackage[hidelinks]{hyperref}
-% \usepackage{lmodern}
+\usepackage{lmodern}
 % \renewcommand{\familydefault}{\sfdefault}
-\usepackage{stix2}
-\usepackage{zi4}
+% \usepackage{stix2}
+% \usepackage{zi4
 \usepackage[activate={true,nocompatibility},
             final,
             tracking=true,
@@ -33,6 +33,9 @@
 }
 \begin{resume}%
   \vspace{-7pt}
+  \section{OBJECTIVE}
+  ABD PhD student in theoretical mathematics. Experience in research mathematics, wavelet image compression, and neural networks. Very fast learner. Fluent in Spanish and Russian, conversational in Persian. Advanced knowledge of Python, R, and (Postgre)SQL. Very interested in foreign languages and cultures.
+  \vspace{-7pt}
   \section{EDUCATION}
   \emph{Master of Science,} Mathematics \hfill August 2020\\
   Purdue University, West Lafayette, IN\\ GPA 3.73\\[3pt]
@@ -41,36 +44,38 @@
   %%%% NEW SECTION
   \vspace{-7pt}
   \section{SKILLS}
-  \emph{Programming languages}: Python, R, Matlab/Octave, \Cpp, C, Java, Common Lisp\\
+  \emph{Programming languages}: Python, Matlab/Octave, \Cpp, C, R, Java, Common Lisp\\
   \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
   \emph{R packages}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
   \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
   \emph{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
-  \emph{Languages}: English (Native), Spanish (Native), Russian (Fluent), Persian (Conversant)
+  \emph{Languages}: English (native), Spanish (native), Russian (fluent), Persian (conversant)
   %%%% NEW SECTION
   \vspace{-7pt}
   \section{RELEVANT EXPERIENCE}
-  \emph{Teaching Assistant}\hfill August 2014-May 2020\\
+  \emph{Graduate Student/Teaching Assistant}\hfill August 2014-May 2020\\
   Department of Mathematics, Purdue University, West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Led two to three recitation sessions per semester for one of Purdue's calculus 1, 2, or 3 courses.
-    \item Uploaded students' scores to web-based academic software such as BlackBoard or Pearson's MyLab.
-    \item Analyzed students' performance on homework, quizzes, and midterms using spreadsheet software.
-    \item Graded differential equations and linear algebra homework at the undergraduate and graduate level.
+  \begin{itemize} % \itemsep -3pt
+    \item Led two to three recitation sections per semester for Purdue's undergraduate level math courses including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.
+    \item Analyzed students' performance on homework, quizzes, and midterms with Libreoffice's Cal (an open-source clone of MS Excel).
+    \item Graded and designed homework/quizzes for undergraduate linear algebra as well as the graduate level Advanced Mathematics for Engineers.
     \item Maintained a university associated
     % \href{https://www.math.purdue.edu/~salinac}
-      {website} where I uploaded relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics.
+          {website} to which I uploaded relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics, cut-off ranges.
+    \item Studied the properties of finite quotients of finitely generated nilpotent groups.
+    \item Studied the zeta function associated to finite quotients of the free nilpotent group and wrote code in Sage to compute coefficients its coefficients.
   \end{itemize}
   \vspace{-7pt}
-  \emph{Experimental Algebra and Geometry Lab System Admin/Research Assistant} \hfill September 2013-May 2014 \\
+  \emph{Experimental Algebra \& Geometry Lab System Admin/Research Assistant} \hfill September 2013-May 2014 \\
   University of Texas--Pan American, Department of Mathematics,
   Edinburg, TX
-  \begin{itemize} \itemsep -3pt %reduce space between items
-    \item Administrated the lab's Fedora cluster which included installing hardware, configuring the network, and installing and updating software.
-    \item Maintained an operational CUDA computing workstation for doing parallel numerical simulations.
-    \item Kept the lab's 3D printer in functioning shape by updating relevant software, cleaning extruder mishaps, and replacing and ordering filament.
+  \begin{itemize} % \itemsep -3pt
+    \item Managed the Geometry Lab's Fedora cluster.
+    \item Maintained an operational CUDA computing workstation for carrying out numerical simulations and experiments.
+    \item Kept the lab's 3D printer in tip-top shape by updating its software, cleaning extruder residue from the nozzle, and replacing and ordering filament.
     \item Engaged with local schools in math and geometry related outreach activities.
-    \item Wrote algorithms in Mathematica to study the trace of representations in character varieties taking advantage of the cyclic property of the trace operator.
+    \item Performed in several skits for Dr.\ Lawton's \emph{Your Teachers Are Lying To You!} outreach program.
+    \item Wrote an algorithm in Mathematica to study the trace of representations in character varieties taking advantage of the cyclic property of the trace operator.
     \item Discovered a correspondence between so-called $2$-special pairs and pairs of
       orientable necklaces.
     \item Published the associated sequence in the On-line Encyclopedia of
@@ -100,45 +105,45 @@
         %     \end{itemize}
 
         %%%%     NEW SECTION
-  \vspace{-7pt}
-  \section{TALKS}
-  \emph{Trends in book-reading over the years}\hfill Summer 2020\\
-  PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
-  \begin{itemize}\itemsep -3pt
-    \item Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.
-    \item Performed linear regression to model the popularity of prolific authors.
-    \item Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.
-  \end{itemize}
-  \vspace{-7pt}
-  \emph{The Black--Scholes model as an application of Itô calculus}\hfill
-  Summer 2019\\
-  Student Analysis Seminar, Department of Mathematics, Purdue University
-  \begin{itemize} \itemsep -3pt
-    \item Gave a short introduction to financial mathematics.
-    \item Introduced the Black--Scholes model and solved it using the Feymann--Kac formula.
-  \end{itemize}
-  \vspace{-7pt}
-  \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
-  Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Introduced the audience to a foundational result in the study of artificial neural networks.
-    \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
-  \end{itemize}
-  \vspace{-7pt}
-  \emph{The Bott periodicity theorem}\hfill Fall 2017\\
-  Student Colloquium Department of Mathematics, Purdue University, West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Proved the Bott periodicity theorem from the perspective of classifying space theory.
-  \end{itemize}
-  \vspace{-7pt}
-  \emph{Wavelet image compression} \hfill
-  Fall 2015\\
-  Department of Mathematics, Purdue University, West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Debugged an basic implementation of a wavelet image compression algorithm in C.
-    \item Presented functional code to the audience and explained specifics behind the compression algorithm.
-  \end{itemize}
-  \vspace{-7pt}
+  % \vspace{-7pt}
+  % \section{TALKS}
+  % \emph{Trends in book-reading over the years}\hfill Summer 2020\\
+  % PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
+  % \begin{itemize}\itemsep -3pt
+  %   \item Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.
+  %   \item Performed linear regression to model the popularity of prolific authors.
+  %   \item Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.
+  % \end{itemize}
+  % \vspace{-7pt}
+  % \emph{The Black--Scholes model as an application of Itô calculus}\hfill
+  % Summer 2019\\
+  % Student Analysis Seminar, Department of Mathematics, Purdue University
+  % \begin{itemize} \itemsep -3pt
+  %   \item Gave a short introduction to financial mathematics.
+  %   \item Introduced the Black--Scholes model and solved it using the Feymann--Kac formula.
+  % \end{itemize}
+  % \vspace{-7pt}
+  % \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
+  % Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
+  % \begin{itemize} \itemsep -3pt
+  %   \item Introduced the audience to a foundational result in the study of artificial neural networks.
+  %   \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
+  % \end{itemize}
+  % \vspace{-7pt}
+  % \emph{The Bott periodicity theorem}\hfill Fall 2017\\
+  % Student Colloquium Department of Mathematics, Purdue University, West Lafayette, IN
+  % \begin{itemize} \itemsep -3pt
+  %   \item Proved the Bott periodicity theorem from the perspective of classifying space theory.
+  % \end{itemize}
+  % \vspace{-7pt}
+  % \emph{Wavelet image compression} \hfill
+  % Fall 2015\\
+  % Department of Mathematics, Purdue University, West Lafayette, IN
+  % \begin{itemize} \itemsep -3pt
+  %   \item Debugged an basic implementation of a wavelet image compression algorithm in C.
+  %   \item Presented functional code to the audience and explained specifics behind the compression algorithm.
+  % \end{itemize}
+  % \vspace{-7pt}
         %         \emph{Introduction to geometric group theory}\\
         %         Department of Mathematics, Purdue University, West Lafayette, IN
         %         \begin{itemize} \itemsep -3pt
