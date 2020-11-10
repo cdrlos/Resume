@@ -1,9 +1,9 @@
-\documentclass[10pt]{res}
+\documentclass{res}
 \usepackage[hidelinks]{hyperref}
 \usepackage{lmodern}
-% \renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\sfdefault}
 % \usepackage{stix2}
-% \usepackage{zi4
+% \usepackage{zi4}
 \usepackage[activate={true,nocompatibility},
             final,
             tracking=true,
@@ -26,15 +26,18 @@
 \address{\small
   \setlength{\tabcolsep}{2pt}
   \begin{tabular}{ll}
-    Address:&7507 Camelot Dr, Mission, TX 78572\\
-    Mobile:&(765) 337-9606\\
-    E-mail:&\texttt{cemiliosal@gmail.com}, \texttt{salinac@purdue.edu}
+    % Address:&7507 Camelot Dr, Mission, TX 78572\\
+    Mobile:&\href{tel:17653379606}{(765) 337-9606}\\
+    E-mail:&\href{mailto:cemiliosal@gmail.com}{\texttt{cemiliosal@gmail.com}}, \href{mailto:salinac@purdue.edu}{\texttt{salinac@purdue.edu}}\\
+    LinkedIn:&\href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}\\
+    GitHub:&\href{https://cdrlos.github.io}{\texttt{cdrlos}}
   \end{tabular}
 }
 \begin{resume}%
   \vspace{-7pt}
   \section{OBJECTIVE}
-  ABD PhD student in theoretical mathematics. Experience in research mathematics, wavelet image compression, and neural networks. Very fast learner. Fluent in Spanish and Russian, conversational in Persian. Advanced knowledge of Python, R, and (Postgre)SQL. Very interested in foreign languages and cultures.
+  % Masters student in Theoretical Mathematics. Experience with research mathematics, wavelet image compression, numerical analysis, numerical linear algebra, and neural networks. Advanced knowledge of Python, R, and SQL. Practical experience with C, \Cpp, and SQL. Hands on experience with data mining, data visualization, machine learning techniques, ANOVA, linear regression methods, and basic NLP. Experience coding convolutional neural networks (CNN) and generative adversarial networks (GAN).
+  Masters student in Theoretical Mathematics seeking a position as a Data Scientist/Analyst. Ample experience with research mathematics, probability, numerical analysis, numerical PDEs, data science, and machine learning. Advanced knowledge of Python, R, and SQL. Experience with designing neural networks, particularly GANs.
   \vspace{-7pt}
   \section{EDUCATION}
   \emph{Master of Science,} Mathematics \hfill August 2020\\
@@ -44,44 +47,40 @@
   %%%% NEW SECTION
   \vspace{-7pt}
   \section{SKILLS}
-  \emph{Programming languages}: Python, Matlab/Octave, \Cpp, C, R, Java, Common Lisp\\
-  \emph{Python packages}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
-  \emph{R packages}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
-  \emph{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
-  \emph{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
-  \emph{Languages}: English (native), Spanish (native), Russian (fluent), Persian (conversant)
+  \textsl{Programming languages}: Python, C, \Cpp, R, Java, Matlab/Octave\\
+  \textsl{Python libraries}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
+  \textsl{R libraries}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
+  \textsl{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
+  \textsl{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
+  \textsl{Languages}: English (native), Spanish (native), Russian (fluent), Persian (conversational)
   %%%% NEW SECTION
   \vspace{-7pt}
-  \section{RELEVANT EXPERIENCE}
-  \emph{Graduate Student/Teaching Assistant}\hfill August 2014-May 2020\\
+  \section{WORK EXPERIENCE}
+  \emph{\href{https://www.math.purdue.edu/~salinac}{Graduate Student/Teaching Assistant}}\hfill August 2014 - May 2020\\
   Department of Mathematics, Purdue University, West Lafayette, IN
-  \begin{itemize} % \itemsep -3pt
-    \item Led two to three recitation sections per semester for Purdue's undergraduate level math courses including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.
-    \item Analyzed students' performance on homework, quizzes, and midterms with Libreoffice's Cal (an open-source clone of MS Excel).
-    \item Graded and designed homework/quizzes for undergraduate linear algebra as well as the graduate level Advanced Mathematics for Engineers.
-    \item Maintained a university associated
-    % \href{https://www.math.purdue.edu/~salinac}
-          {website} to which I uploaded relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics, cut-off ranges.
+  \begin{itemize} \itemsep -3pt
+    \item Led two to three recitation sections per semester for undergraduate math courses, including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.
+    \item Graded homework and wrote quizzes/exam problems for several undergraduate as well as graduate courses, including Linear Algebra, Differential Equations and PDEs for Engineering, and the Sciences, and Advance Mathematics for Physicists and Engineers.
+    \item Maintained a university associated website which hosted relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics.
     \item Studied the properties of finite quotients of finitely generated nilpotent groups.
-    \item Studied the zeta function associated to finite quotients of the free nilpotent group and wrote code in Sage to compute coefficients its coefficients.
+    \item Studied the zeta function associated to finite quotients of the free nilpotent group and wrote code in Sage to compute its coefficients.
   \end{itemize}
   \vspace{-7pt}
-  \emph{Experimental Algebra \& Geometry Lab System Admin/Research Assistant} \hfill September 2013-May 2014 \\
+  \emph{\href{https://www.utrgv.edu/eagl/}{Experimental Algebra \& Geometry Lab System Admin/Research Assistant}} \hfill September 2013 - May 2014 \\
   University of Texas--Pan American, Department of Mathematics,
   Edinburg, TX
-  \begin{itemize} % \itemsep -3pt
-    \item Managed the Geometry Lab's Fedora cluster.
-    \item Maintained an operational CUDA computing workstation for carrying out numerical simulations and experiments.
-    \item Kept the lab's 3D printer in tip-top shape by updating its software, cleaning extruder residue from the nozzle, and replacing and ordering filament.
+  \begin{itemize} \itemsep -3pt
+    \item Maintained the Geometry Lab's Fedora cluster up to date and operational.
+    \item Configured an NVIDIA GPU-equipped computer for CUDA-enabled parallel computing with Mathematica.
+    \item Operated the lab's 3D printer and kept it in tip-top shape for use in Dr.\ Lawton's outreach activities.
     \item Engaged with local schools in math and geometry related outreach activities.
-    \item Performed in several skits for Dr.\ Lawton's \emph{Your Teachers Are Lying To You!} outreach program.
+    \item Performed in several skits for Dr.\ Lawton's \href{https://usasciencefestival.org/people/sean-lawton/}{\emph{Your Teachers Are Lying To You!}} outreach program.
+    \item Taught K12 students how to \href{http://pi.math.cornell.edu/~dwh/papers/crochet/crochet.html}{crochet a hyperbolic plane}.
     \item Wrote an algorithm in Mathematica to study the trace of representations in character varieties taking advantage of the cyclic property of the trace operator.
-    \item Discovered a correspondence between so-called $2$-special pairs and pairs of
+    \item Discovered a correspondence between so-called 2-special pairs and pairs of
       orientable necklaces.
     \item Published the associated sequence in the On-line Encyclopedia of
-      Integer Sequences under % \href{https://oeis.org/A237623}
-      {A237623}.
-    \item Presented results at Howard University's Workshop on Character Varieties and Geometric Structures.
+      Integer Sequences under \href{https://oeis.org/A237623}{A237623}.
   \end{itemize}
   % \emph{Summer Research Opportunity Program} \hfill June-August 2010 \\
   % Massachusetts Institute of Technology,
@@ -105,15 +104,16 @@
         %     \end{itemize}
 
         %%%%     NEW SECTION
-  % \vspace{-7pt}
-  % \section{TALKS}
-  % \emph{Trends in book-reading over the years}\hfill Summer 2020\\
-  % PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
-  % \begin{itemize}\itemsep -3pt
-  %   \item Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.
-  %   \item Performed linear regression to model the popularity of prolific authors.
-  %   \item Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.
-  % \end{itemize}
+  \vspace{-7pt}
+  \section{TALKS}
+  \emph{Mathematics to Data Science Bootcamp}\hfill Summer 2020\\
+  PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
+  \begin{itemize}\itemsep -3pt
+    \item Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.
+    \item Performed linear regression to model the popularity of prolific authors.
+    \item Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.
+    \item Wrote Python code in scikit-learn to classify cases of Parkinson using the k-nearest neighbors classifier achieving a 0.96 success rate on the test data.
+  \end{itemize}
   % \vspace{-7pt}
   % \emph{The Black--Scholes model as an application of Itô calculus}\hfill
   % Summer 2019\\
@@ -122,14 +122,14 @@
   %   \item Gave a short introduction to financial mathematics.
   %   \item Introduced the Black--Scholes model and solved it using the Feymann--Kac formula.
   % \end{itemize}
-  % \vspace{-7pt}
-  % \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
-  % Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
-  % \begin{itemize} \itemsep -3pt
-  %   \item Introduced the audience to a foundational result in the study of artificial neural networks.
-  %   \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
-  % \end{itemize}
-  % \vspace{-7pt}
+  \vspace{-7pt}
+  \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
+  Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
+  \begin{itemize} \itemsep -3pt
+    \item Introduced the audience to a foundational result in the study of artificial neural networks.
+    \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
+  \end{itemize}
+  \vspace{-7pt}
   % \emph{The Bott periodicity theorem}\hfill Fall 2017\\
   % Student Colloquium Department of Mathematics, Purdue University, West Lafayette, IN
   % \begin{itemize} \itemsep -3pt
@@ -140,15 +140,16 @@
   % Fall 2015\\
   % Department of Mathematics, Purdue University, West Lafayette, IN
   % \begin{itemize} \itemsep -3pt
-  %   \item Debugged an basic implementation of a wavelet image compression algorithm in C.
+  %   \item Wrote with a team an implementation of a wavelet image compression algorithm in C.
   %   \item Presented functional code to the audience and explained specifics behind the compression algorithm.
+  %   \item Implemented a Q-coder part which is type of entropy coding used to compress binary sequences.
   % \end{itemize}
   % \vspace{-7pt}
-        %         \emph{Introduction to geometric group theory}\\
-        %         Department of Mathematics, Purdue University, West Lafayette, IN
-        %         \begin{itemize} \itemsep -3pt
-        %       \item Gave a short introduction to geometric group theory with examples primarily in the modular group.
-        %     \end{itemize}
+            %     \emph{Introduction to geometric group theory}\\
+            %     Department of Mathematics, Purdue University, West Lafayette, IN
+            %     \begin{itemize} \itemsep -3pt
+            %   \item Gave a short introduction to geometric group theory with examples primarily in the modular group.
+            % \end{itemize}
 
         %         \vspace{-7pt}
         %         \emph{Making graphics for your students in TikZ and Asymptote}\\
