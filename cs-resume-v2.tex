@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[11pt]{article}
+\documentclass{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -20,10 +20,10 @@
 
 %----------FONT OPTIONS----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-\usepackage[default,osf]{sourcesanspro}
+% \usepackage[default,osf]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -32,7 +32,11 @@
 
 % mono
 % \usepackage{zi4}
-\usepackage[scaled=.9]{sourcecodepro}
+\usepackage[scaled=.85]{FiraMono}
+% \usepackage[scaled=.9]{sourcecodepro}
+
+% symbols
+\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -113,13 +117,15 @@
 % \end{tabular*}
 
 \begin{center}
-  \textbf{\Huge Carlos Salinas} \\ \vspace{5pt}
-  \small 7507 Camelot Dr, Mission, TX 78572\\
-    \href{tel:17653379606}{(765) 337-9606}\\
-    \href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}},
+  \textbf{\Huge Carlos Salinas} \\\vspace{10pt}
+  \small
+  \begin{tabular*}{\textwidth}{@{} l @{\extracolsep{\fill}} l @{}}
+    \faHome~~7507 Camelot Dr, &\faEnvelope~~\href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}},
     \href{mailto:salinac@purdue.edu}{\texttt{salinac@purdue.edu}}\\
-    \href{https://cdrlos.github.io/}{\texttt{cdrlos.github.io}}
-  %    \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}\hfill
+    ~~~~~~Mission, TX 78572&\faGithubAlt~~\href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}\\
+    \faMobile~~\href{tel:17653379606}{(765) 337-9606}&\faLinkedin~~\href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}\\
+  \end{tabular*}
+  %    
   % \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}
 \end{center}
 
@@ -128,11 +134,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Purdue University}{West Lafayette, IN}
-      {Master of Science in Mathematics}{Aug.\ 2020}
+      {Purdue University, West Lafayette, IN}{Aug.\ 2020}
+      {Master of Science in Mathematics}{\textnormal{GPA: 3.73/4.0}}
     \resumeSubheading
-      {University of Texas--Pan American}{Edinburg, TX}
-      {Bachelor of Science in Mathematics}{May 2014}
+      {University of Texas--Pan American, Edinburg, TX}{May 2014}
+      {Bachelor of Science in Mathematics}{\textnormal{GPA: 3.86/4.0}}
   \resumeSubHeadingListEnd
 
 
@@ -142,21 +148,23 @@
 
     \resumeSubheading
       {Graduate Student/Teaching Assistant}{Aug.\ 2014 -- May 2020}
-      {Department of Mathematics, Purdue University}{West Lafayette, IN}
+      {Department of Mathematics at Purdue University, West Lafayette, IN}{}
       \resumeItemListStart
         \resumeItem{Led two to three recitation sections per semester for undergraduate math courses, including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.}
         \resumeItem{Graded homework, wrote quizzes, and proofread exams for several undergraduate courses, including Calculus 1, 2, 3, Differential Equations and PDEs for Engineering and the Sciences, and Advanced Mathematics for Physicists and Engineers.}
-        \resumeItem{Put up a university-hosted personal website to upload relevant course material such as quiz and homework solutions, recitation notes, and relevant course statistics.}
-        \resumeItem{}
+        \resumeItem{Created a university-hosted personal website to upload relevant course material such as quiz and homework solutions, recitation notes, and relevant course statistics using the Jekyll framework.}
+        \resumeItem{Studied the zeta function associated to finite quotients of the finitely generated free nilpotent group.}
+        \resumeItem{Wrote code in Sage to compute the asymptotic behavior of the number of finite quotients of a given index.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
-      {Experimental Algebra \& Geometry Lab, University of Texas--Pan American}{Edinburg, TX}
+      {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American, Edinburg, TX}{}
       \resumeItemListStart
-        \resumeItem{}
-        \resumeItem{}
-        \resumeItem{}
+        \resumeItem{Maintained the lab's Fedora workstation cluster up to date and operational.}
+        \resumeItem{Made accounts for other users with appropriate permissions.}
+        \resumeItem{Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink and trained interested students how to use it.}
+        \resumeItem{Operated the lab's 3D printer, updated its software, and kept it in shape for use in Dr.\ Lawton's outreach activities.}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -179,7 +187,14 @@
           {\textbf{} $|$ \emph{}}{}
           \resumeItemListStart
             \resumeItem{}
-            \resumeItem{}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PRESENTATIONS-----------
+\section{Presentations}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{}{}
+          \resumeItemListStart
             \resumeItem{}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -189,7 +204,7 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C, Matlab/Octave, R, Java}\\
+     \textbf{Languages}{: Python, C, Matlab/Octave, R, Racket, Java}\\
      \textbf{Frameworks}{: Jekyll, WordPress} \\
      \textbf{Developer Tools}{: Git, Emacs, Vim, Eclipse} \\
      \textbf{Python Libraries}{: pandas, NumPy, matplotlib, scikit-learn, Keras, NLTK, spaCy}\\
