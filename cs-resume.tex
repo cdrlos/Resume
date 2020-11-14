@@ -1,167 +1,230 @@
-\documentclass{res}
+%-------------------------
+% Resume in Latex
+% Author : Carlos Salinas
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\sfdefault}
-% \usepackage{stix2}
+\usepackage{fancyhdr}
+
+% default font
+% \usepackage{lmodern}
+% \renewcommand{\familydefault}{\sfdefault}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% mono
 % \usepackage{zi4}
-\usepackage[activate={true,nocompatibility},
-            final,
-            tracking=true,
-            kerning=true,
-            spacing=true,
-            factor=1100,
-            stretch=10,
-            shrink=10]{microtype}
+% \usepackage[scaled=.85]{FiraMono}
+% \usepackage[scaled=.9]{noto-mono}
+\usepackage[scaled=.87]{sourcecodepro}
 
-\addtolength{\topmargin}{-.75in}
-\addtolength{\textheight}{1.75in}
-\renewcommand{\baselinestretch}{0.95}
-\newsectionwidth{0pt}  % So the text is not indented under section headings
+% symbols
+\usepackage{fontawesome}
 
-\newcommand{\Cpp}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\scriptsize\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\scriptsize\bf +}}
-\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\scriptsize\bf ++}}}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bf\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-\name{\vspace{-3pt}\LARGE Carlos Salinas\\[5pt]} % the \\[12pt] adds a blank line after name
-\address{\small
-  \setlength{\tabcolsep}{2pt}
-  \begin{tabular}{ll}
-    % Address:&7507 Camelot Dr, Mission, TX 78572\\
-    Mobile:&\href{tel:17653379606}{(765) 337-9606}\\
-    E-mail:&\href{mailto:cemiliosal@gmail.com}{\texttt{cemiliosal@gmail.com}}, \href{mailto:salinac@purdue.edu}{\texttt{salinac@purdue.edu}}\\
-    LinkedIn:&\href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}\\
-    GitHub:&\href{https://cdrlos.github.io}{\texttt{cdrlos}}
-  \end{tabular}
-}
-\begin{resume}%
-  % \vspace{-7pt}
-  % \section{OBJECTIVE}
-  % Masters student in Theoretical Mathematics seeking a position as a Data Scientist/Analyst. Ample experience with research mathematics, probability, numerical analysis, numerical PDEs, data science, and machine learning. Advanced knowledge of Python, R, and SQL. Experience with designing neural networks, particularly GANs.
-  \vspace{-7pt}
-  \section{EDUCATION}
-  \emph{Master of Science,} Mathematics \hfill August 2020\\
-  Purdue University, West Lafayette, IN\\ GPA 3.73\\[3pt]
-  \emph{Bachelor of Science,} Mathematics\hfill May 2014\\
-  University of Texas--Pan American, Edinburg, TX\\ GPA 3.86
-  %%%% NEW SECTION
-  \vspace{-7pt}
-  \section{SKILLS}
-  \textsl{Programming languages}: Python, C, \Cpp, R, Java, Matlab/Octave\\
-  \textsl{Python libraries}: numpy, scikit-learn, matplotlib, pandas, keras, spaCy\\
-  \textsl{R libraries}: ggplot, tidyverse, tidymodels, dplyr, forcats, modelr, shiny\\
-  \textsl{Misc.\ software}: Emacs, Vim, SQL, Git, Latex, Mathematica, LibreOffice, Google Docs\\
-  \textsl{Operating systems}: Linux (Debian, Fedora), FreeBSD, Windows\\
-  \textsl{Languages}: English (native), Spanish (native), Russian (fluent), Persian (conversant)
-  %%%% NEW SECTION
-  \vspace{-7pt}
-  \section{WORK EXPERIENCE}
-  \emph{\href{https://www.math.purdue.edu/~salinac}{Graduate Student/Teaching Assistant}}\hfill August 2014 - May 2020\\
-  Department of Mathematics, Purdue University, West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Led two to three recitation sections per semester for undergraduate math courses, including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.
-    \item Graded homework and wrote quizzes/exam problems for several undergraduate as well as graduate courses, including Linear Algebra, Differential Equations and PDEs for Engineering, and the Sciences, and Advance Mathematics for Physicists and Engineers.
-    \item Maintained a university associated website which hosted relevant course material such as quiz and homework solutions, recitation notes, and quiz and midterm statistics.
-    \item Studied the properties of finite quotients of finitely generated nilpotent groups.
-    \item Studied the zeta function associated to finite quotients of the free nilpotent group and wrote code in Sage to compute its coefficients.
-  \end{itemize}
-  \vspace{-7pt}
-  \emph{\href{https://www.utrgv.edu/eagl/}{Experimental Algebra \& Geometry Lab System Admin/Research Assistant}} \hfill September 2013 - May 2014 \\
-  University of Texas--Pan American, Department of Mathematics,
-  Edinburg, TX
-  \begin{itemize} \itemsep -3pt
-    \item Maintained the Geometry Lab's Fedora cluster up to date and operational.
-    \item Configured an NVIDIA GPU-equipped computer for CUDA-enabled parallel computing with Mathematica.
-    \item Operated the lab's 3D printer and kept it in tip-top shape for use in Dr.\ Lawton's outreach activities.
-    \item Engaged with local schools in math and geometry related outreach activities.
-    \item Performed in several skits for Dr.\ Lawton's \href{https://usasciencefestival.org/people/sean-lawton/}{\emph{Your Teachers Are Lying To You!}} outreach program.
-    \item Taught K12 students how to \href{http://pi.math.cornell.edu/~dwh/papers/crochet/crochet.html}{crochet a hyperbolic plane}.
-    \item Wrote an algorithm in Mathematica to study the trace of representations in character varieties taking advantage of the cyclic property of the trace operator.
-    \item Discovered a correspondence between so-called 2-special pairs and pairs of
-      orientable necklaces.
-    \item Published the associated sequence in the On-line Encyclopedia of
-      Integer Sequences under \href{https://oeis.org/A237623}{A237623}.
-  \end{itemize}
-  % \emph{Summer Research Opportunity Program} \hfill June-August 2010 \\
-  % Massachusetts Institute of Technology,
-  % DMSE,
-  % Cambridge, MA
-  % \begin{itemize} \itemsep -3pt %reduce space between items
-        %       \item Studied elasticity modulus of Ti-Ta shape-memory alloy.
-        %       \item Experimented with several annealing and alloy processing
-        %         methods to obtain better shape-memory properties.
-        %     \end{itemize}
-        %%%%     NEW SECTION
-        %         \vspace{-7pt}
-        %         \section{RELEVANT COURSEWORK}
-        %         \emph{Wavelet image compression} \hfill
-        %         September-December 2015\\
-        %         Purdue University, Department of Mathematics, West Lafayette, IN
-        %         \begin{itemize} \itemsep -3pt
-        %       \item Debugged and documented C code for wavelet image compression written by Dr.\ B.J.\ Lucier.
-        %       \item Reworked the Q-coder which is an adaptive algorithm that compresses
-        %         binary sequences.
-        %     \end{itemize}
 
-        %%%%     NEW SECTION
-  \vspace{-7pt}
-  \section{TALKS}
-  \emph{Mathematics to Data Science Bootcamp}\hfill Summer 2020\\
-  PI4 Computational Boot Camp, University of Illinois Urbana-Champaign
-  \begin{itemize}\itemsep -3pt
-    \item Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.
-    \item Performed linear regression to model the popularity of prolific authors.
-    \item Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.
-  \end{itemize}
-  % \vspace{-7pt}
-  % \emph{The Black--Scholes model as an application of Itô calculus}\hfill
-  % Summer 2019\\
-  % Student Analysis Seminar, Department of Mathematics, Purdue University
-  % \begin{itemize} \itemsep -3pt
-  %   \item Gave a short introduction to financial mathematics.
-  %   \item Introduced the Black--Scholes model and solved it using the Feymann--Kac formula.
-  % \end{itemize}
-  \vspace{-7pt}
-  \emph{Cybenko's Approximations by superpositions of sigmoidal functions}\hfill Spring 2019\\
-  Machine Learning and Information Processing Reading Group, Purdue University,  West Lafayette, IN
-  \begin{itemize} \itemsep -3pt
-    \item Introduced the audience to a foundational result in the study of artificial neural networks.
-    \item Proved the necessary lemmas to show that sigmoidal functions can approximate any continuous function.
-  \end{itemize}
-  \vspace{-7pt}
-  % \emph{The Bott periodicity theorem}\hfill Fall 2017\\
-  % Student Colloquium Department of Mathematics, Purdue University, West Lafayette, IN
-  % \begin{itemize} \itemsep -3pt
-  %   \item Proved the Bott periodicity theorem from the perspective of classifying space theory.
-  % \end{itemize}
-  % \vspace{-7pt}
-  % \emph{Wavelet image compression} \hfill
-  % Fall 2015\\
-  % Department of Mathematics, Purdue University, West Lafayette, IN
-  % \begin{itemize} \itemsep -3pt
-  %   \item Wrote with a team an implementation of a wavelet image compression algorithm in C.
-  %   \item Presented functional code to the audience and explained specifics behind the compression algorithm.
-  %   \item Implemented a Q-coder part which is type of entropy coding used to compress binary sequences.
-  % \end{itemize}
-  % \vspace{-7pt}
-            %     \emph{Introduction to geometric group theory}\\
-            %     Department of Mathematics, Purdue University, West Lafayette, IN
-            %     \begin{itemize} \itemsep -3pt
-            %   \item Gave a short introduction to geometric group theory with examples primarily in the modular group.
-            % \end{itemize}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-        %         \vspace{-7pt}
-        %         \emph{Making graphics for your students in TikZ and Asymptote}\\
-        %         Department of Mathematics, Purdue University, West Lafayette, IN
-        %         \begin{itemize} \itemsep -3pt
-        %       \item Introduced participants to TikZ/Asymptote for creating simple graphics which can be easily included in a Latex project.
-        %     \end{itemize}
-        %%%%     NEW SECTION
-        %         \vspace{-7pt}
-        %         \section{CURRENT PROJECTS}
-\end{resume}
+\begin{center}
+  \textbf{\Huge Carlos Salinas} \\\vspace{10pt}
+  \small
+  \begin{tabular*}{\textwidth}{@{} ll @{\extracolsep{\fill}} l @{}}
+  \faHome&7507 Camelot Dr, Mission, TX 78572&\faGithubAlt~~\href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}\\
+    \faMobile&\href{tel:17653379606}{(765) 337-9606}&  \faLinkedin~~\href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}\\
+    \faEnvelope&\href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}}\\
+  \end{tabular*}
+  %    
+  % \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University\textnormal{, West Lafayette, IN}}{Aug.\ 2020}
+      {Master of Science in Mathematics}{\textnormal{GPA: 3.73/4.0}}
+    \resumeSubheading
+      {University of Texas--Pan American\textnormal{, Edinburg, TX}}{May 2014}
+      {Bachelor of Science in Mathematics}{\textnormal{GPA: 3.86/4.0}}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graduate Student/Teaching Assistant}{Aug.\ 2014 -- May 2020}
+      {Department of Mathematics at Purdue University, West Lafayette, IN}{}
+      \resumeItemListStart
+        \resumeItem{Led two to three recitation sections per semester for undergraduate math courses, including Calculus 1, 2, 3, and Differential Equations/Linear Algebra.}
+        \resumeItem{Graded homework, wrote quizzes, and proofread exams for several undergraduate courses, including Calculus 1, 2, 3, Differential Equations and PDEs for Engineering and the Sciences, and Advanced Mathematics for Physicists and Engineers.}
+        \resumeItem{Created a university-hosted website to upload relevant course material such as quiz and homework solutions, recitation notes, and course statistics with Jekyll.}
+        \resumeItem{Studied the zeta function associated to finite quotients of the finitely generated free nilpotent group.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
+      {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American, Edinburg, TX}{}
+      \resumeItemListStart
+        \resumeItem{Operated the lab's Fedora workstation cluster which included updating and installing software, managing users and user permissions, keeping track of workstation usage, and updating the lab's WikiDot-powered website.}
+        \resumeItem{Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink and trained interested students how to use it.}
+        \resumeItem{Operated the lab's 3D printer, updated its software, and kept it in shape for use in Dr.\ Lawton's outreach activities.}
+        \resumeItem{Wrote an algorithm in Mathematica to study the trace representations of 2-special words taking advantage of trace identities to reduce the size of search space.}
+        \resumeItem{Discovered a correspondence between 2-special words and orientable necklaces, published in the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}.}
+      \resumeItemListEnd
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListEnd
+
+% -----------LEADERSHIP---------
+  % \section{Leadership Experience}
+  % \resumeSubHeadingListStart
+  %   \resumeSubheading
+  %     {Academic Boot Camp \& Multiethnic Introduction to Engineering Mathematics Mentor}{June. 2018 -- Aug.\ 2018}
+  %     {College of Agriculture at Purdue University, West Lafayette, IN}{}
+  %     \resumeItemListStart
+  %     \resumeItem{Mentored incoming undergraduate students in mathematics.}
+  %     \resumeItem{Reviewed for }
+  %     \resumeItem{Graded mathematics assignments for ABC students.}
+  %     \resumeItem{Held discussions for MITE students' SAT prep course.}
+  %     \resumeItemListEnd
+
+%-----------PRESENTATIONS-----------
+\section{Presentations}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Superpositions of a Sigmoidal Function}{Feb.\ 6, 2019}{Machine Learning Reading Group, Purdue University}{}
+    \resumeItemListStart
+    \resumeItem{Introduced the audience to a foundational result in Universal Approximation Theory.}
+    \resumeItem{Introduced the results and language necessary to prove that sigmoids can approximate any continuous function.}
+    \resumeItem{Proved that ReLUs are \emph{discriminatory} and therefore universal approximators.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
+    \resumeItemListStart
+    \resumeItem{Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.}
+    \resumeItem{Performed linear regression to model the popularity of prolific authors.}
+    \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%     \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, Common Lisp, R, SQL, Java, Matlab}\\
+     \textbf{Developer Tools}{: Git, Emacs, Vim} \\
+     \textbf{Python Libraries/Frameworks}{: pandas, NumPy, matplotlib, scikit-learn, Keras, NLTK, spaCy}\\
+     \textbf{R Libraries/Frameworks}{: tidyverse, tidymodels, forcats, mlr, shiny}\\
+     \textbf{Misc.\ Software}{: Linux (Debian, Fedora), Mathematica, LaTeX, Microsoft Office (Excel, Outlook, PowerPoint)}\\
+     \textbf{Natural Languages}{: English (native), Spanish (native), Russian (fluent), Persian (conversant), French (proficient)}
+    }}
+ \end{itemize}
+%-------------------------------------------
 \end{document}
-
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: t
-%%% End:

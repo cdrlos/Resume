@@ -1,9 +1,7 @@
-archived/
 auto/
 .auctex-auto
-cs-resume.pdf
-cs-cover.pdf
-Max_Ruby_Resume.pdf
+cs-resume-*.pdf
+cs-cover-*.pdf
 _region_.*
 
 # Created by https://www.toptal.com/developers/gitignore/api/latex
