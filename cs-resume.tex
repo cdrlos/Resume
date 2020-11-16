@@ -14,6 +14,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
+<<<<<<< HEAD
 %----------FONT OPTIONS----------
 % \usepackage{lmodern}
 % sans-serif
@@ -33,6 +34,19 @@
 \usepackage[scaled=.9]{sourcecodepro}
 
 \usepackage{fontawesome}
+=======
+% default font
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[activate={true,nocompatibility},
+            final,
+            tracking=true,
+            kerning=true,
+            spacing=true,
+            factor=1100,
+            stretch=10,
+            shrink=10]{microtype}
+>>>>>>> 059081b988dd30383a28679e8594f027a850fa23
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -148,9 +162,9 @@
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
       {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American, Edinburg, TX}{}
       \resumeItemListStart
-        \resumeItem{Operated the lab's Fedora workstation cluster which included updating and installing software, managing users and user permissions, keeping track of workstation usage, and updating the lab's WikiDot-powered website.}
-        \resumeItem{Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink and trained interested students how to use it.}
-        \resumeItem{Operated the lab's 3D printer, updated its software, and kept it in shape for use in Dr.\ Lawton's outreach activities.}
+        \resumeItem{Managed the lab's Fedora workstation cluster which included updating and installing software, managing users and user permissions, keeping track of workstation usage, and updating the lab's WikiDot-powered website.}
+        \resumeItem{Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink and trained lab members how to use it.}
+        \resumeItem{Operated the lab's 3D printer, updated its software, and kept it in shape for use in the lab's outreach activities.}
         \resumeItem{Wrote an algorithm in Mathematica to study the trace representations of 2-special words taking advantage of trace identities to reduce the size of search space.}
         \resumeItem{Discovered a correspondence between 2-special words and orientable necklaces, published in the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}.}
       \resumeItemListEnd
@@ -184,11 +198,12 @@
     \resumeSubheading
     {Superpositions of a Sigmoidal Function}{Feb.\ 6, 2019}{Machine Learning Reading Group, Purdue University}{}
     \resumeItemListStart
-    \resumeItem{Introduced the audience to a foundational result in Universal Approximation Theory.}
+    \resumeItem{Presented with a partner a foundational result in Universal Approximation Theory to an audience of approx.\ 40.}
     \resumeItem{Introduced the results and language necessary to prove that sigmoids can approximate any continuous function.}
-    \resumeItem{Proved that ReLUs are \emph{discriminatory} and therefore universal approximators.}
+    \resumeItem{Proved that ReLUs are \emph{discriminatory}, as an application, and therefore universal approximators.}
     \resumeItemListEnd
 
+<<<<<<< HEAD
     % \resumeSubheading
     % {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
     % \resumeItemListStart
@@ -196,6 +211,17 @@
     % \resumeItem{Performed linear regression to model the popularity of prolific authors.}
     % \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
     % \resumeItemListEnd
+=======
+    \resumeSubheading
+    {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
+    \resumeItemListStart
+    \resumeItem{Wrote an RMarkdown notebook to explore a subset of GoodReads' English-language reviews.}
+    \resumeItem{Acquired the data from an R interface to GoodReads' API and filtered the data for review-rich books.}
+    \resumeItem{Performed linear regression to model the popularity of prolific authors.}
+    \resumeItem{Used this model to predict ratings based on book title, authorship, number of pages, and release date.}
+    \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
+    \resumeItemListEnd
+>>>>>>> 059081b988dd30383a28679e8594f027a850fa23
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
