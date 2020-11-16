@@ -14,9 +14,25 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 
-% default font
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\sfdefault}
+%----------FONT OPTIONS----------
+% \usepackage{lmodern}
+% sans-serif
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+% \usepackage{stix2}
+
+% mono
+% \usepackage{zi4}
+\usepackage[scaled=.9]{sourcecodepro}
+
+\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -98,14 +114,8 @@
 
 \begin{center}
   \textbf{\Huge Carlos Salinas} \\\vspace{10pt}
-  \small
-  \begin{tabular*}{\textwidth}{l@{\extracolsep\fill}l}
-  Address: 7507 Camelot Dr, Mission, TX 78572&GitHub: \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}\\
-    Mobile: \href{tel:17653379606}{(765) 337-9606}&  LinkedIn: \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}\\
-    E-mail: \href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}}\\
-  \end{tabular*}
-  %    
-  % \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}
+  \faPhone~~\href{tel:17653379606}{765-337-9606}\\
+    \faEnvelope~~\href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}}
 \end{center}
 
 
@@ -179,13 +189,13 @@
     \resumeItem{Proved that ReLUs are \emph{discriminatory} and therefore universal approximators.}
     \resumeItemListEnd
 
-    \resumeSubheading
-    {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
-    \resumeItemListStart
-    \resumeItem{Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.}
-    \resumeItem{Performed linear regression to model the popularity of prolific authors.}
-    \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
-    \resumeItemListEnd
+    % \resumeSubheading
+    % {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
+    % \resumeItemListStart
+    % \resumeItem{Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.}
+    % \resumeItem{Performed linear regression to model the popularity of prolific authors.}
+    % \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
+    % \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
@@ -200,11 +210,11 @@
     \small{\item{
      \textbf{Languages}{: Python, C, R, MATLAB, Java, SQL, Clojure, Julia}\\
      \textbf{Developer Tools}{: Git, Emacs, Vim} \\
-     \textbf{Python Libraries/Frameworks}{: pandas, NumPy, matplotlib, scikit-learn, Keras, NLTK, spaCy}\\
-     \textbf{R Libraries/Frameworks}{: tidyverse, tidymodels, forcats, mlr, shiny}\\
      \textbf{Misc.\ Software}{: Linux (Debian, Fedora), Mathematica, LaTeX, Microsoft Office (Excel, Outlook, PowerPoint)}\\
      \textbf{Natural Languages}{: English (native), Spanish (native), Russian (fluent), Persian (conversant), French (proficient)}
     }}
  \end{itemize}
-%-------------------------------------------
+ % -------------------------------------------
+ \faGithubAlt~~\href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}
+ \hfill\faLinkedin~~ \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}
 \end{document}
