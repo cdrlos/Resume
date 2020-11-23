@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -13,25 +13,8 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-
-%----------FONT OPTIONS----------
 \usepackage{lmodern}
-% sans-serif
 \renewcommand{\familydefault}{\sfdefault}
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-% \usepackage{stix2}
-
-% mono
-% \usepackage[scaled=.9]{zi4}
-% \usepackage[scaled=.85]{sourcecodepro}
-
 \usepackage[activate={true,nocompatibility},
             final,
             tracking=true,
@@ -40,8 +23,6 @@
             factor=1100,
             stretch=10,
             shrink=10]{microtype}
-
-\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -72,6 +53,7 @@
 
 %-------------------------
 % Custom commands
+\definecolor{CoolBlack}{rgb}{0.0, 0.18, 0.39}
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -123,10 +105,12 @@
 
 \begin{center}
   \textbf{\huge Carlos Salinas} \\\vspace{10pt}
-  \small\faPhone~~\href{tel:17653379606}{765-337-9606}\hfill
-  \faEnvelope~~\href{mailto:cemiliosal@gmailocom}{\textcolor{Blue}{\texttt{cemiliosal@gmail.com}}}
+  \small Mobile: \href{tel:17653379606}{\textcolor{CoolBlack}{765-337-9606}}\hfill
+  \small GitHub: \href{https://github.com/cdrlos}{\textcolor{CoolBlack}{\texttt{github.com/cdrlos}}}\\
+  Email: \href{mailto:cemiliosal@gmailocom}{\textcolor{CoolBlack}{\texttt{cemiliosal@gmail.com}}}
+ \hfill
+ Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\textcolor{CoolBlack}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -139,33 +123,42 @@
       {Bachelor of Science in Mathematics}{\textnormal{GPA: 3.86/4.0}}
   \resumeSubHeadingListEnd
 
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, C, R, Java, MATLAB/Octave, SQL} \\
+     \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
+     \textbf{Other Software}{: Linux, LaTeX, Markdown, Bash, Awk}\\
+     \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
+    }}
+ \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
-      {Department of Mathematics at Purdue University, West Lafayette, IN}{}
+      {Department of Mathematics at Purdue University}{West Lafayette, IN}
       \resumeItemListStart
-      \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, and Differential Equations and Linear Algebra. Graded homework, wrote quizzes, and proofread exams for said undergraduate courses.}
-      \resumeItem{Graded graduate level courses for Engineering Mathematics and proctored midterms and final exams.}
-      \resumeItem{Put up a university website with Jekyll to host math related content for students, including: notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class statistics.}
-      \resumeItem{Worked under Dr.\ Ben McReynolds to a recent paper from Bridson--Conder--Reid on the profinite rigidity of triangle groups and a broader problem on demonstrating the feasibility of using the finite quotients of a finitely generated group as a quasi-isometric invariant using the free nilpotent group as a test case. Wrote code in GAP to compute small finite quotients of triangle groups using work done by Macbeath on generators for these groups.}
+      \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations, and Linear Algebra. Graded homework, wrote quizzes, and proofread exams.}
+      \resumeItem{Hosted a website built using Jekyll to post math related content for students, including notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
+      \resumeItem{Worked under Dr.\ Ben McReynolds on effectivizing a result of Bridson--Conder--Reid on profinite rigidity of triangle groups and a broader problem on the feasibility of using finite quotients as a quasi-metric on its profinite completion. Wrote a program in GAP to compute finite quotients, narrowing the search space through the congruence subgroup property.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
-      {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American, Edinburg, TX}{}
+      {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American}{Edinburg, TX}
       \resumeItemListStart
-        \resumeItem{Managed the lab's Fedora workstation cluster which included updating and installing software, managing users and user permissions, keeping track of workstation usage, and updating the lab's WikiDot-powered website. Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink and trained lab members how to use it. Operated and maintained the lab's 3D printer.}
-        \resumeItem{Wrote an algorithm in Mathematica to study the trace representations of 2-special words taking advantage of trace identities to reduce the size of search space. Discovered a correspondence between 2-special words and orientable necklaces, published in the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}. This work was presented at the Character Varieties and Geometry Structures Workshop held at Howard University.}
+        \resumeItem{Managed the lab's Fedora cluster. Updated and installed software. Managed users and users' permissions. Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink.}
+        \resumeItem{Wrote an program in Mathematica to effectively compute 2-special words families up to word-length 40. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{\textcolor{CoolBlack}{A237623}}. This work was presented at the Character Varieties and Geometry Structures Workshop held at Howard University.}
         \resumeItemListEnd
 
      \resumeSubheading
-      {Undergraduate Researcher}{Jun.\ 2010 -- Aug.\ 2010}
-      {Department of Materials Science and Engineering at the Massachusetts Institute of Technology, Cambridge, MA}{}
+      {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
+      {Department of Materials Science and Engineering at the Massachusetts Institute of Technology }{Cambridge, MA}
       \resumeItemListStart
-        \resumeItem{Studied the shape-memory and superelastic properties of Ti-Ta under guidance from Sam Allen and Jeff Disko. Heat-treated Ti-Ta alloys of various compositions were tested for shape-memory and superelastic properties by means of hot oil recovery test. Metallographs of the samples were taken throughout the processing and testing to study the microstructure. Mechanical testing such as tensile test and fatigue tests were performed and recorded.}
+        \resumeItem{Studied the shape-memory and superelastic properties of Ti-Ta under Dr.\ Sam Allen and Jeff Disko. Tested heat-treated Ti-Ta alloys of various compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Mechanical tests such as tensile test and fatigue tests were performed and recorded.}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -183,17 +176,16 @@
   \section{Outreach Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Academic Boot Camp for Purdue's \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{Minority Engineering Program}}{June. 2018 -- Aug.\ 2018}
-      {College of Agriculture at Purdue University, West Lafayette, IN}{}
+      {Academic Boot Camp for Purdue's \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{Minority Engineering Program}}{June 2018 -- Aug.\ 2018}
+      {College of Agriculture at Purdue University}{West Lafayette, IN}
       \resumeItemListStart
-      \resumeItem{Mentored a group of incoming undergraduates on introductory mathematics courses including Precalculus, Calculus 1, and Calculus 2. Simulated a real (albeit accelerated) first semester Calculus experience for students which culminated in a letter grade with a personal recommendations on how to improve at the end of the program. Prepared and graded student homework and assessments.}
-      \resumeItem{Held SAT math prep sessions for a group of junior high school students---part of the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/11th\%20Grade\%20MITE\%20Academic\%20Boot\%20Camp.html}{MITE}s program.}
+      \resumeItem{Simulated a 1\textsuperscript{st} semester Calculus experience for incoming undergraduate students in the MEP. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
       \resumeItemListEnd
       \resumeSubheading
       {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Jan. 2013 -- May 2014}
-      {Experimental Algebra \& Geometry Lab, the University of Texas--Pan American, Edinburg, TX}{}
+      {Experimental Algebra \& Geometry Lab, the University of Texas--Pan American}{Edinburg, TX}
       \resumeItemListStart
-      \resumeItem{Performed in several of Dr.\ Sean Lawton's outreach activity including: \href{https://usasciencefestival.org/people/sean-lawton/}{\emph{Your Teacher Are Lying To You!}} outreach activities designed to introduce high school students to higher level mathematics through kinesthetic activities such as playing with a clock (modular arithmetic), complex numbers, drawing triangles on balloons (spherical geometry); \emph{Snowflake Symmetry} an outreach activity designed to teach middle school and early high school students about the mathematics of symmetry (in essence group theory); and \emph{You Can Count on Monsters} an activity designed for much younger students to teach them about prime numbers the \emph{atoms} which make up the counting numbers; lastly introduced more senior community members to hyperbolic crocheting, a technique developed by mathematician Daina Taimiņa.}
+      \resumeItem{Participated in Dr.\ Sean Lawton's outreach program designed to introduce K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities. Introduced older community members to hyperbolic crocheting.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -219,23 +211,8 @@
 
 %-----------PROJECTS-----------
 % \section{Projects}
-%     \resumeSubHeadingListStart
-%     \resumeSubHeadingListEnd
+% \resumeSubHeadingListStart
+% \resumeSubHeadingListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming Languages}{: Python, C, R, Java, MATLAB/Octave, SQL} \\
-     \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
-     \textbf{Microsoft Office}{: Excel, Outlook, PowerPoint, Word}\\
-     \textbf{Other Software}{: Linux, LaTeX, Markdown, Bash, Awk}\\
-     \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
-    }}
- \end{itemize}
  % -------------------------------------------
- \small\faGithubAlt~~\href{https://github.com/cdrlos}{\textcolor{Blue}{\texttt{github.com/cdrlos}}}
- \hfill
- \faLinkedin~~\href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\textcolor{Blue}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}}
 \end{document}
