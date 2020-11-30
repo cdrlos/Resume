@@ -12,9 +12,29 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{datetime2}
+\makeatletter
+\def\verno{\@dtm@year.\@dtm@month.\@dtm@day}
+\makeatother
+\hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
 \usepackage{fancyhdr}
-\usepackage{lmodern}
-\renewcommand{\familydefault}{\sfdefault}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault,lining]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% mono
+% \usepackage{FiraMono}
+\usepackage{roboto-mono}
+% \usepackage{sourcecodepro}
+
 \usepackage[activate={true,nocompatibility},
             final,
             tracking=true,
@@ -139,27 +159,25 @@
 \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Teaching Assistant}{Aug.\ 2014 -- May 2020}
-      {Department of Mathematics at Purdue University}{West Lafayette, IN}
+      {Department of Mathematics, Purdue University}{West Lafayette, IN}
+      {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
       \resumeItemListStart
       \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations, and Linear Algebra. Graded homework, wrote quizzes, and proofread exams.}
-      \resumeItem{Hosted a website built using Jekyll to post math related content for students, including notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
-      \resumeItem{Wrote a GAP function to compute finite congruence quotients to distinguish triangle groups following a result by Bridson--Conder--Reid that triangle groups are profinitely rigid.}
+      \resumeItem{Hosted a website built using Jekyll to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
+      \resumeItem{Studied finite quotients of triangle groups and nilpotent groups. Wrote a program in GAP to compute finite quotients to distinguish inequivalent triangle groups following a result by Bridson--Conder--Reid that triangle groups are profinitely rigid.}
       \resumeItemListEnd
-
     \resumeSubheading
+      {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
-      {Experimental Algebra \& Geometry Lab at the University of Texas--Pan American}{Edinburg, TX}
       \resumeItemListStart
-        \resumeItem{Managed the lab's Fedora cluster. Updated and installed software. Managed users and users' permissions. Configured the lab's Nvidia GPU for usage with Mathematica's CUDALink.}
-        \resumeItem{Wrote an program in Mathematica to effectively compute 2-special words families up to word-length 40. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{\textcolor{CoolBlack}{A237623}}. This work was presented at the Character Varieties and Geometry Structures Workshop held at Howard University.}
+        \resumeItem{Managed the Experimental Algebra and Geometry Lab's Fedora cluster. Administered users and user permissions, updated software, and configured the lab's Nvidia GPU for usage with Mathematica's CUDALink.}
+        \resumeItem{Wrote an program in Mathematica to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{\textcolor{CoolBlack}{A237623}}. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
         \resumeItemListEnd
-
      \resumeSubheading
+      {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
       {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
-      {Department of Materials Science and Engineering at the Massachusetts Institute of Technology }{Cambridge, MA}
       \resumeItemListStart
-        \resumeItem{Studied the shape-memory and superelastic properties of Ti-Ta under Dr.\ Sam Allen. Tested heat-treated Ti-Ta alloys of various compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Mechanical tests such as tensile test and fatigue tests were performed and recorded.}
+        \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed and recorded the results of mechanical tests, such as tensile test, and fatigue tests.}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -177,16 +195,16 @@
   \section{Outreach Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {College of Agriculture, Purdue University}{West Lafayette, IN}
       {Academic Boot Camp for Purdue's Minority Engineering Program}{June 2018 -- Aug.\ 2018}
-      {College of Agriculture at Purdue University}{West Lafayette, IN}
       \resumeItemListStart
-      \resumeItem{Simulated a 1\textsuperscript{st} semester Calculus experience for incoming undergraduate students in the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{\textcolor{CoolBlack}{MEP}}. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
+      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{\textcolor{CoolBlack}{MEP}}. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
       \resumeItemListEnd
       \resumeSubheading
-      {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Jan. 2013 -- May 2014}
-      {Experimental Algebra \& Geometry Lab, the University of Texas--Pan American}{Edinburg, TX}
+      {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
+      {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Sep. 2012 -- May 2014}
       \resumeItemListStart
-      \resumeItem{Introduced K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities through Dr.\ Sean Lawton's \href{https://usasciencefestival.org/people/sean-lawton/}{\textcolor{CoolBlack}{outreach program}}.}
+      \resumeItem{Introduced K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities. Taught older members of the community hyperbolic crocheting. Gave presentations on geometric and algebraic concepts through the department's Secret Student Seminar to an audience of other undergraduates.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
