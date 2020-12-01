@@ -1,16 +1,37 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
 \usepackage[hidelinks]{hyperref}
-% default font
-\usepackage[sfdefault,condensed,light]{roboto}
-\usepackage[activate={true,nocompatibility},
-            final,
-            tracking=true,
-            kerning=true,
-            spacing=true,
-            factor=1100,
-            stretch=10,
-            shrink=10]{microtype}
+%----------FONT OPTIONS----------
+% \usepackage{lmodern}
+% \renewcommand*\familydefault{\sfdefault}
+% sans-serif
+% \usepackage[sfdefault,lining]{FiraSans}
+% \usepackage[sfdefault,condensed]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% mono
+% \usepackage{FiraMono}
+% \usepackage[scaled=.88]{roboto-mono}
+% \usepackage{sourcecodepro}
+
+% \usepackage[activate={true,nocompatibility},
+%             final,
+%             tracking=true,
+%             kerning=true,
+%             spacing=true,
+%             factor=1100,
+%             stretch=10,
+%             shrink=10]{microtype}
+
+% XeTeX font
+\usepackage{fontspec}
+\setmainfont[Ligatures=NoCommon]{Lato}
+\setmonofont[Ligatures=NoCommon,Scale=MatchLowercase]{Hack}
 
 % the following commands control the margins:
 \topmargin=-1in    % Make letterhead start about 1 inch from top of page
@@ -30,7 +51,7 @@ Mission, TX 78572\\
 {765-337-9606}\\[-15pt]}
 
 \begin{letter}{
-McAllen Neuhaus,
+McAllen Neuhaus\\
 1100 East Jasmine Avenue Suite 106 \\
 McAllen, TX 78501
 }
@@ -48,3 +69,7 @@ I am more than confident in my ability to succeed in this position. Should you h
 Carlos Salinas}
 \end{letter}
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:

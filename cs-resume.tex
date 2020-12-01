@@ -12,17 +12,21 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{datetime2}
-\makeatletter
-\def\verno{\@dtm@year.\@dtm@month.\@dtm@day}
-\makeatother
-\hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
+% \usepackage{datetime2}
+% \makeatletter
+% \def\verno{\@dtm@year.\@dtm@month.\@dtm@day}
+% \makeatother
+% \hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
 \usepackage{fancyhdr}
 
 %----------FONT OPTIONS----------
+% \usepackage{lmodern}
+% \renewcommand*\familydefault{\sfdefault}
+% \fontseries{sbc}\selectfont
+
 % sans-serif
 % \usepackage[sfdefault,lining]{FiraSans}
-\usepackage[sfdefault,condensed]{roboto}
+% \usepackage[sfdefault,condensed]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
 
@@ -32,17 +36,13 @@
 
 % mono
 % \usepackage{FiraMono}
-\usepackage[scaled=.88]{roboto-mono}
+% \usepackage[scaled=.88]{roboto-mono}
 % \usepackage{sourcecodepro}
 
-\usepackage[activate={true,nocompatibility},
-            final,
-            tracking=true,
-            kerning=true,
-            spacing=true,
-            factor=1100,
-            stretch=10,
-            shrink=10]{microtype}
+% XeTeX font
+\usepackage{fontspec}
+\setmainfont[Ligatures=NoCommon]{Lato}
+\setmonofont[Ligatures=NoCommon,Scale=MatchLowercase]{Hack}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -69,7 +69,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -148,7 +148,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, C, R, Java, MATLAB/Octave, SQL} \\
+     \textbf{Programming Languages}{: Python, C, Java, R, MATLAB/Octave, SQL} \\
      \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
      \textbf{Other Software}{: Linux, LaTeX, Markdown, Bash, Awk}\\
      \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
@@ -177,7 +177,7 @@
       {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
       {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
       \resumeItemListStart
-        \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed and recorded the results of mechanical tests, such as tensile test, and fatigue tests.}
+        \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -204,7 +204,7 @@
       {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
       {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Sep. 2012 -- May 2014}
       \resumeItemListStart
-      \resumeItem{Introduced K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities. Taught older members of the community hyperbolic crocheting. Gave presentations on geometric and algebraic concepts through the department's Secret Student Seminar to an audience of other undergraduates.}
+      \resumeItem{Introduced K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities. Introduced senior members of the community to hyperbolic crocheting and non-Euclidean geometry.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -236,3 +236,7 @@
 
 % -------------------------------------------
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:
