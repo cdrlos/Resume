@@ -1,32 +1,9 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
 \usepackage[hidelinks]{hyperref}
-%----------FONT OPTIONS----------
-% \usepackage{lmodern}
-% \renewcommand*\familydefault{\sfdefault}
-% sans-serif
-% \usepackage[sfdefault,lining]{FiraSans}
-% \usepackage[sfdefault,condensed]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-% mono
-% \usepackage{FiraMono}
-% \usepackage[scaled=.88]{roboto-mono}
-% \usepackage{sourcecodepro}
-
-% \usepackage[activate={true,nocompatibility},
-%             final,
-%             tracking=true,
-%             kerning=true,
-%             spacing=true,
-%             factor=1100,
-%             stretch=10,
-%             shrink=10]{microtype}
+\usepackage{datetime2}
+\def\verno{Chase Neuhaus \DTMDate\today}
+\hypersetup{pdftitle={Carlos Salinas - Cover Letter \verno},pdfauthor={Carlos Salinas}}
 
 % XeTeX font
 \usepackage{fontspec}

@@ -11,39 +11,18 @@
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-% \usepackage{datetime2}
-% \makeatletter
-% \def\verno{\@dtm@year.\@dtm@month.\@dtm@day}
-% \makeatother
-% \hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
-\usepackage{fancyhdr}
-
-%----------FONT OPTIONS----------
-% \usepackage{lmodern}
-% \renewcommand*\familydefault{\sfdefault}
-% \fontseries{sbc}\selectfont
-
-% sans-serif
-% \usepackage[sfdefault,lining]{FiraSans}
-% \usepackage[sfdefault,condensed]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-% mono
-% \usepackage{FiraMono}
-% \usepackage[scaled=.88]{roboto-mono}
-% \usepackage{sourcecodepro}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\def\verno{\DTMDate\today}
+\hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
 
 % XeTeX font
 \usepackage{fontspec}
 \setmainfont[Ligatures=NoCommon,Numbers=Proportional]{Lato}
 \setmonofont[Ligatures=NoCommon,Scale=MatchLowercase]{Hack}
+\usepackage{microtype}
 
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -114,35 +93,28 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
   \textbf{\huge Carlos Salinas} \\\vspace{10pt}
-  \small Mobile: \href{tel:17653379606}{\textcolor{Cerulean}{765-337-9606}}\hfill
-  \small GitHub: \href{https://github.com/cdrlos}{\textcolor{Cerulean}{\texttt{github.com/cdrlos}}}\\
-  Email: \href{mailto:cemiliosal@gmailocom}{\textcolor{Cerulean}{\texttt{cemiliosal@gmail.com}}}
+  \small Mobile: \href{tel:17653379606}{765-337-9606}\hfill
+  \small GitHub: \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}\\
+  Email: \href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}}
  \hfill
- Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\textcolor{Cerulean}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}}
+ Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Purdue University\textnormal{, West Lafayette, IN}}{Aug.\ 2020}
-      {Master of Science in Mathematics}{\textnormal{GPA: 3.73/4.0}}
+      {Purdue University, West Lafayette, IN}{Aug.\ 2020}
+      {Master of Science in Mathematics}{GPA: 3.73/4.0}
     \resumeSubheading
-      {University of Texas--Pan American\textnormal{, Edinburg, TX}}{May 2014}
-      {Bachelor of Science in Mathematics}{\textnormal{GPA: 3.86/4.0}}
+      {University of Texas--Pan American, Edinburg, TX}{May 2014}
+      {Bachelor of Science in Mathematics}{GPA: 3.86/4.0}
   \resumeSubHeadingListEnd
-
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
@@ -163,7 +135,7 @@
       {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
       \resumeItemListStart
       \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations, and Linear Algebra. Graded homework, wrote quizzes, and proofread exams.}
-      \resumeItem{Hosted a website built using Jekyll to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
+      \resumeItem{Hosted a \href{https://www.math.purdue.edu/~salinac}{website} built using Jekyll to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
       \resumeItem{Studied finite quotients of triangle groups and nilpotent groups. Wrote a program in GAP to compute finite quotients to distinguish inequivalent triangle groups following a result by Bridson--Conder--Reid that triangle groups are profinitely rigid.}
       \resumeItemListEnd
     \resumeSubheading
@@ -171,7 +143,7 @@
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
       \resumeItemListStart
         \resumeItem{Managed the Experimental Algebra and Geometry Lab's Fedora cluster. Administered users and user permissions, updated software, and configured the lab's Nvidia GPU for usage with Mathematica's CUDALink.}
-        \resumeItem{Wrote an program in Mathematica to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{\textcolor{Cerulean}{A237623}}. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
+        \resumeItem{Wrote an program in Mathematica to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
         \resumeItemListEnd
      \resumeSubheading
       {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
@@ -191,14 +163,14 @@
 %-------------------------------------------
 \resumeSubHeadingListEnd
 
-% -----------LEADERSHIP---------
+% -----------LEADERSHIP/OUTREACH---------
   \section{Outreach Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {College of Agriculture, Purdue University}{West Lafayette, IN}
-      {Academic Boot Camp for Purdue's Minority Engineering Program}{June 2018 -- Aug.\ 2018}
+      {Academic Boot Camp for Purdue's Minority Engineering Program}{Jun.\ 2018 -- Aug.\ 2018}
       \resumeItemListStart
-      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{\textcolor{Cerulean}{MEP}}. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
+      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{MEP}. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
       \resumeItemListEnd
       \resumeSubheading
       {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
@@ -208,7 +180,7 @@
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%-----------PRESENTATIONS-----------
+%-----------EXPOSITION-----------
 % \section{Presentations}
 %     \resumeSubHeadingListStart
 %     \resumeSubheading
@@ -218,7 +190,6 @@
 %     \resumeItem{Introduced the results and language necessary to prove that sigmoids can approximate any continuous function.}
 %     \resumeItem{Proved that ReLUs are \emph{discriminatory}, as an application, and therefore universal approximators.}
 %     \resumeItemListEnd
-
     % \resumeSubheading
     % {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
     % \resumeItemListStart
@@ -232,7 +203,6 @@
 % \section{Projects}
 % \resumeSubHeadingListStart
 % \resumeSubHeadingListEnd
-
 
 % -------------------------------------------
 \end{document}
