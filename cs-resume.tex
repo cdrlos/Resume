@@ -4,23 +4,26 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
+% Variables
+\def\auth{Carlos Salinas}
 
 \documentclass[11pt]{article}
-
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
+
+% Improved hypertexting
 \usepackage{hyperref}
 \usepackage{datetime2}
 \def\verno{\DTMDate\today}
-\hypersetup{pdftitle={Carlos Salinas - Resume v.\verno},pdfauthor={Carlos Salinas}}
+\hypersetup{pdftitle={\auth - Resume v.\verno},pdfauthor={\auth}}
 
-% XeTeX font
-\usepackage{fontspec}
-\setmainfont[Ligatures=NoCommon,Numbers=Proportional]{Lato}
-\setmonofont[Ligatures=NoCommon,Scale=MatchLowercase]{Hack}
-\usepackage{microtype}
+% XeTeX allows for a wider selection of fonts
+\usepackage[mathrm=sym]{unicode-math}
+\setmainfont[Ligatures=TeX]{Fira Sans} % Enabling Ligatures=NoCommon ensures ATS parsability
+\setmonofont[Scale=MatchLowercase]{Fira Mono}
+\setmathfont{Fira Math}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -46,9 +49,6 @@
 \titleformat{\section}{
   \vspace{-4pt}\bf\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -97,12 +97,12 @@
 
 %----------HEADING----------
 \begin{center}
-  \textbf{\huge Carlos Salinas} \\\vspace{10pt}
-  \small Mobile: \href{tel:17653379606}{765-337-9606}\hfill
-  \small GitHub: \href{https://github.com/cdrlos}{\texttt{github.com/cdrlos}}\\
-  Email: \href{mailto:cemiliosal@gmailocom}{\texttt{cemiliosal@gmail.com}}
+  \textbf{\Huge\scshape Carlos Salinas} \\\vspace{10pt}
+  Mobile: (765) 337-9606\hfill
+  GitHub: \texttt{github.com/cdrlos}\\
+  Email: \texttt{cemiliosal@gmail.com}
  \hfill
- Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160}{\texttt{linkedin.com/in/carlos-salinas-64588b160}}
+ Linkedin: \texttt{linkedin.com/in/carlos-salinas-64588b160}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -120,7 +120,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, C, Java, R, MATLAB/Octave, SQL} \\
+     \textbf{Programming Languages}{: Python, C, Java, R, Julia, MATLAB/Octave, SQL} \\
      \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
      \textbf{Other Software}{: Linux, LaTeX, Markdown, Bash, Awk}\\
      \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
@@ -135,7 +135,7 @@
       {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
       \resumeItemListStart
       \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations, and Linear Algebra. Graded homework, wrote quizzes, and proofread exams.}
-      \resumeItem{Hosted a \href{https://www.math.purdue.edu/~salinac}{website} built using Jekyll to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
+      \resumeItem{Hosted a website built using Jekyll to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
       \resumeItem{Studied finite quotients of triangle groups and nilpotent groups. Wrote a program in GAP to compute finite quotients to distinguish inequivalent triangle groups following a result by Bridson--Conder--Reid that triangle groups are profinitely rigid.}
       \resumeItemListEnd
     \resumeSubheading
@@ -143,7 +143,7 @@
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
       \resumeItemListStart
         \resumeItem{Managed the Experimental Algebra and Geometry Lab's Fedora cluster. Administered users and user permissions, updated software, and configured the lab's Nvidia GPU for usage with Mathematica's CUDALink.}
-        \resumeItem{Wrote an program in Mathematica to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
+        \resumeItem{Wrote an program in Mathematica to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences A237623. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
         \resumeItemListEnd
      \resumeSubheading
       {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
@@ -170,7 +170,7 @@
       {College of Agriculture, Purdue University}{West Lafayette, IN}
       {Academic Boot Camp for Purdue's Minority Engineering Program}{Jun.\ 2018 -- Aug.\ 2018}
       \resumeItemListStart
-      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the \href{https://www.purdue.edu/mep/Pre-College\%20Programs/PROMISE.html}{MEP}. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
+      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the MEP. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
       \resumeItemListEnd
       \resumeSubheading
       {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
@@ -206,7 +206,3 @@
 
 % -------------------------------------------
 \end{document}
-
-% Local Variables:
-% TeX-engine: xetex
-% End:

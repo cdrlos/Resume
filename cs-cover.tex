@@ -6,9 +6,10 @@
 \hypersetup{pdftitle={Carlos Salinas - Cover Letter \verno},pdfauthor={Carlos Salinas}}
 
 % XeTeX font
-\usepackage{fontspec}
-\setmainfont[Ligatures=NoCommon]{Lato}
-\setmonofont[Ligatures=NoCommon,Scale=MatchLowercase]{Hack}
+\usepackage[mathrm=sym]{unicode-math}
+\setmainfont[Ligatures=TeX]{Fira Sans} % Enabling Ligatures=NoCommon ensures ATS parsability
+\setmonofont[Scale=MatchLowercase]{Fira Mono}
+\setmathfont{Fira Math}
 
 % the following commands control the margins:
 \topmargin=-1in    % Make letterhead start about 1 inch from top of page
@@ -46,7 +47,3 @@ I am more than confident in my ability to succeed in this position. Should you h
 Carlos Salinas}
 \end{letter}
 \end{document}
-
-% Local Variables:
-% TeX-engine: xetex
-% End:
