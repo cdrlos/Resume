@@ -18,17 +18,16 @@
 \usepackage{datetime2}
 \def\verno{\DTMDate\today}
 \hypersetup{colorlinks=true,
-  urlcolor=Violet,
-  pdftitle={\auth - Resume v.\verno},pdfauthor={\auth}}
+  urlcolor=Blue,
+pdftitle={\auth - Resume v.\verno},pdfauthor={\auth}}
 
 % Font
-% \usepackage[default,regular,black]{sourceserifpro}
-% \usepackage[sf]{sourcesanspro}
-% \usepackage[scaled=.95]{sourcecodepro}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[scaled=.98]{sourcecodepro}
 \usepackage[default]{roboto}
-\usepackage[scaled=.93]{roboto-mono}
-% \usepackage[default,lining]{FiraSans}
-% \usepackage[scaled=.95]{FiraMono}
+\usepackage[scaled=.98]{roboto-mono}
+% \usepackage[default]{FiraSans}
+% \usepackage[scaled=.98]{FiraMono}
 \usepackage[T1]{fontenc}
 
 \usepackage[activate={true,nocompatibility},final,tracking=true,
@@ -66,31 +65,31 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 % Custom commands
 \definecolor{Cerulean}{rgb}{0.0, 0.18, 0.39}
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -113,8 +112,8 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
   \small Mobile: \href{tel:+17653379606}{(765) 337-9606}\hfill
   GitHub: \href{https://github.com/cdrlos}{\texttt{cdrlos}}\\
   \small Email: \href{mailto:cemiliosal@gmail.com}{\texttt{cemiliosal@gmail.com}}
- \hfill
- Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}
+  \hfill
+  Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}
 \end{center}
 
 % \section{Objective}
@@ -122,103 +121,107 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Purdue University, West Lafayette, IN}{Aug.\ 2020}
-      {Master of Science in Mathematics}{GPA: 3.73/4.0}
-    \resumeSubheading
-      {University of Texas--Pan American, Edinburg, TX}{May 2014}
-      {Bachelor of Science in Mathematics}{GPA: 3.86/4.0}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{Purdue University, West Lafayette, IN}{Aug.\ 2020}
+{Master of Science in Mathematics}{GPA: 3.73/4.0}
+\resumeSubheading
+{University of Texas--Pan American, Edinburg, TX}{May 2014}
+{Bachelor of Science in Mathematics}{GPA: 3.86/4.0}
+\resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming Languages}{: Python, Julia, C++, R, Java, SQL, Matlab/Octave} \\
-     \textbf{AI Libraries/Frameworks}{: NumPy, Pandas, Scikit-Learn, Keras, Matplotlib}\\
-     \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
-     \textbf{Other Software}{: Linux, LaTeX, Mathematica, Markdown, Jekyll, Bash, Awk}\\
-     \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
-    }}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+      \textbf{Programming Languages}{: Python, C++, Julia, JavaScript, R, Matlab, Java, SQL} \\
+      \textbf{AI Libraries/Frameworks}{: NumPy, Pandas, Scikit-Learn, Keras, Matplotlib}\\
+      \textbf{Developer Tools}{: Vim, Emacs, Git, Jupyter, Pluto, GCC, Valgrind, Gradle} \\
+      \textbf{Other Software}{: Linux, LaTeX, Kramdown, Markdown, Jekyll, Bash, Awk}\\
+      \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
+  }}
  \end{itemize}
 
-%-----------EXPERIENCE-----------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Department of Mathematics, Purdue University}{West Lafayette, IN}
-      {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
-      \resumeItemListStart
-      \resumeItem{Led recitation for undergraduate courses, such as Calculus 1, 2, 3, Differential Equations, and Linear Algebra.}
-      \resumeItem{Hosted math related content for students on a personal university \href{https://math.purdue.edu/~salinac/}{webpage}, such as notes, quiz and midterm solutions, performance statistics, and course related deadlines.}
-      \resumeItem{Wrote code to study the finite quotients of triangle and nilpotetent groups.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
-      {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
-      \resumeItemListStart
-        \resumeItem{Managed the Experimental Algebra and Geometry Lab's Linux cluster, which included administering users and users' permissions, updating software, and configuring the lab's GPU.}
-        \resumeItem{Wrote an program to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}.}
-        \resumeItemListEnd
-     % \resumeSubheading
-     %  {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
-     %  {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
-     %  \resumeItemListStart
-     %    \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
-     %  \resumeItemListEnd
+ %-----------EXPERIENCE-----------
+ \section{Work Experience}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ {Department of Mathematics, Purdue University}{West Lafayette, IN}
+ {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
+ \resumeItemListStart
+ \resumeItem{Led recitation for undergraduate courses, such as Calculus 1, 2, 3, Differential Equations, and Linear Algebra.}
+ \resumeItem{Created course-related content for students, such as notes, quiz and midterm solutions, and performance statistics.}
+ \resumeItem{Wrote code to study the finite quotients of triangle and nilpotent groups.}
+ \resumeItemListEnd
+ \resumeSubheading
+ {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
+ {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
+ \resumeItemListStart
+ \resumeItem{Managed the Experimental Algebra and Geometry Lab's Linux cluster, which included administering users, installing software, running services, and configuring the lab's GPU.}
+ \resumeItem{Wrote an program to compute 2-special word families up to word-length 30 which leverage the existence of trace formulas to significantly reduce the search space. Published the sequence on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}.}
+ \resumeItemListEnd
+ \resumeSubheading
+  {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
+  {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
+  \resumeItemListStart
+    \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
+  \resumeItemListEnd
 
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-\resumeSubHeadingListEnd
+ % -----------Multiple Positions Heading-----------
+ %    \resumeSubSubheading
+ %     {Software Engineer I}{Oct 2014 - Sep 2016}
+ %     \resumeItemListStart
+ %        \resumeItem{Apache Beam}
+ %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+ %     \resumeItemListEnd
+ %    \resumeSubHeadingListEnd
+ %-------------------------------------------
+ \resumeSubHeadingListEnd
 
-% -----------LEADERSHIP/OUTREACH---------
-  \section{Outreach Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {College of Agriculture, Purdue University}{West Lafayette, IN}
-      {Academic Boot Camp for Purdue's Minority Engineering Program}{Jun.\ 2018 -- Aug.\ 2018}
-      \resumeItemListStart
-      \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the MEP. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
-      \resumeItemListEnd
-      \resumeSubheading
-      {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
-      {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Sep. 2012 -- May 2014}
-      \resumeItemListStart
-      \resumeItem{Introduced K12 students in the Texas RGV to abstract mathematics, such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities.}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
+ % -----------LEADERSHIP/OUTREACH---------
+ \section{Outreach Experience}
+ \resumeSubHeadingListStart
+ \resumeSubheading
+ {College of Agriculture, Purdue University}{West Lafayette, IN}
+ {Academic Boot Camp for Purdue's Minority Engineering Program}{Jun.\ 2018 -- Aug.\ 2018}
+ \resumeItemListStart
+ \resumeItem{Simulated a first semester Calculus experience for incoming undergraduate students in the MEP. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations.}
+ \resumeItemListEnd
+ \resumeSubheading
+ {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
+ {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Sep. 2012 -- May 2014}
+ \resumeItemListStart
+ \resumeItem{Introduced K12 students in the Texas RGV to abstract mathematics, such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities.}
+ \resumeItemListEnd
+ \resumeSubHeadingListEnd
 
-%-----------EXPOSITION-----------
-% \section{Presentations}
-%     \resumeSubHeadingListStart
-%     \resumeSubheading
-%     {Superpositions of a Sigmoidal Function}{Feb.\ 6, 2019}{Machine Learning Reading Group, Purdue University}{}
-%     \resumeItemListStart
-%     \resumeItem{Presented with a partner a foundational result in Universal Approximation Theory to an audience of approx.\ 40.}
-%     \resumeItem{Introduced the results and language necessary to prove that sigmoids can approximate any continuous function.}
-%     \resumeItem{Proved that ReLUs are \emph{discriminatory}, as an application, and therefore universal approximators.}
-%     \resumeItemListEnd
-    % \resumeSubheading
-    % {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
-    % \resumeItemListStart
-    % \resumeItem{Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.}
-    % \resumeItem{Performed linear regression to model the popularity of prolific authors.}
-    % \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
-    % \resumeItemListEnd
-    % \resumeSubHeadingListEnd
+ %-----------EXPOSITION-----------
+ % \section{Presentations}
+ %     \resumeSubHeadingListStart
+ %     \resumeSubheading
+ %     {Superpositions of a Sigmoidal Function}{Feb.\ 6, 2019}{Machine Learning Reading Group, Purdue University}{}
+ %     \resumeItemListStart
+ %     \resumeItem{Presented with a partner a foundational result in Universal Approximation Theory to an audience of approx.\ 40.}
+ %     \resumeItem{Introduced the results and language necessary to prove that sigmoids can approximate any continuous function.}
+ %     \resumeItem{Proved that ReLUs are \emph{discriminatory}, as an application, and therefore universal approximators.}
+ %     \resumeItemListEnd
+ % \resumeSubheading
+ % {Observations}{June 2020}{\href{https://ravat1.github.io/2020DSB-website/}{Data Science Bootcamp} at University of Chicago at Urbana-Champaign}{}
+ % \resumeItemListStart
+ % \resumeItem{Wrote an RMarkdown notebook to analyze book ratings on a subset of GoodReads' database.}
+ % \resumeItem{Performed linear regression to model the popularity of prolific authors.}
+ % \resumeItem{Performed ANOVA on the data to get an overview of the different features of the data and how they relate to the \emph{popularity} of a given author.}
+ % \resumeItemListEnd
+ % \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Writing \& Projects}
-% \resumeSubHeadingListStart
-% \resumeSubHeadingListEnd
+ %-----------PROJECTS-----------
+ \section{Writing \& Projects}
+ \resumeSubHeadingListStart
+ \resumeSubItem{\href{https://cdrlos.github.io}{cdrlos.github.io}}
+ {A small portfolio hosted on GitHub Pages. Currently under construction.}
+ \resumeSubItem{\href{https://www.math.purdue.edu/~salinac}{math.purdue.edu/{\textasciitilde}salinac}}
+ {University webpage. Mostly contains teaching material.}
+ \resumeSubHeadingListEnd
 
-% -------------------------------------------
-\end{document}
+ % -------------------------------------------
+ \end{document}

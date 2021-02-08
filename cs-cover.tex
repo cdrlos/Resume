@@ -1,17 +1,20 @@
 % Cover letter using letter.cls
 \documentclass[12pt]{letter} % default is 10 pt
+\usepackage[usenames,dvipsnames]{color}
 \usepackage[hidelinks]{hyperref}
 \usepackage{datetime2}
 \def\verno{Chase Neuhaus \DTMDate\today}
-\hypersetup{pdftitle={Carlos Salinas - Cover Letter \verno},pdfauthor={Carlos Salinas}}
+\hypersetup{colorlinks=true, 
+urlcolor=Blue,
+pdftitle={Carlos Salinas - Cover Letter \verno},pdfauthor={Carlos Salinas}}
 
 % Font
-\usepackage[default]{sourcesanspro}
-\usepackage[scaled=.95]{sourcecodepro}
-% \usepackage[default]{roboto}
-% \usepackage[scaled=.93]{roboto-mono}
-% \usepackage[default,lining]{FiraSans}
-% \usepackage[scaled=.95]{FiraMono}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[scaled=.98]{sourcecodepro}
+\usepackage[default]{roboto}
+\usepackage[scaled=.98]{roboto-mono}
+% \usepackage[default]{FiraSans}
+% \usepackage[scaled=.98]{FiraMono}
 \usepackage[T1]{fontenc}
 
 \input{glyphtounicode}
@@ -27,21 +30,30 @@
 % \newsectionwidth{0pt}  % So the text is not indented under section headings
 
 \begin{document}
+
 \address{
 Carlos Salinas \\
 7507 Camelot Dr\\
 Mission, TX 78572\\
-{(765) 337-9606}\\[-15pt]}
+{\href{tel:+17653379606}{(765) 337-9606}}\\[-15pt]}
 
 \begin{letter}{
-McAllen Neuhaus\\
-1100 East Jasmine Avenue Suite 106 \\
-McAllen, TX 78501
+% Habitat for Humanity International\\
+% 285 Peachtree Center Ave NE\\
+% Suite 2700\\
+% Atlanta, GA 30303 USA\\
+New York - National Office\\
+30 Rockefeller Plaza 41st Floor,\\
+New York, NY 10112 USA
 }
 
 \vfill % forces letterhead to top of page
 
-\opening{Dear HR Department at the Chase branch in McAllen Neuhaus,}
+\opening{Dear HR Team at Deloitte,}
+    % I would be lying to you if I told you that working for a nonprofit organization has been anything but an afterthought for me; a career I did not consider very seriously. But recent developments in how I see the world and how I see the exploitation user-generated data for the sake of profit (and often at the expense of real human beings) has forced me to seriously reconsider my career aspirations.
+I am writing to you regarding the Consulting Solution Engineering Analyst position. I am a recent graduate from Purdue University's rigorous graduate program in mathematics and I am looking to put my abilities to good use. I have an excellent foundation in theoretical as well as computational mathematics---think such subjects as numerical analysis, numerical linear algebra, and numerical PDEs, but also wavelet analysis, probability, and machine learning.
+
+Besides my technical skills, which I list in my resume, the most important skill I bring to the table is my problem solving abilities which I honed during my graduate studies, my ability to persist on a problem through to its solution, my ability to look at a problem from a perspective that does not come easily to many an engineer, and my fluency in formal mathematics.
 
 \closing{Sincerely,\\[5pt]
 Carlos Salinas}
