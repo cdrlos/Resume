@@ -18,14 +18,17 @@
 \usepackage{datetime2}
 \def\verno{\DTMDate\today}
 \hypersetup{colorlinks=true,
-  urlcolor=Cerulean,
+  urlcolor=Violet,
   pdftitle={\auth - Resume v.\verno},pdfauthor={\auth}}
 
-% \usepackage{lmodern}
-% \usepackage[default,lining]{FiraSans}
-% \usepackage[lining,scaled=.95]{FiraMono}
+% Font
+% \usepackage[default,regular,black]{sourceserifpro}
+% \usepackage[sf]{sourcesanspro}
+% \usepackage[scaled=.95]{sourcecodepro}
 \usepackage[default]{roboto}
-\usepackage[scaled=.95]{roboto-mono}
+\usepackage[scaled=.93]{roboto-mono}
+% \usepackage[default,lining]{FiraSans}
+% \usepackage[scaled=.95]{FiraMono}
 \usepackage[T1]{fontenc}
 
 \usepackage[activate={true,nocompatibility},final,tracking=true,
@@ -107,14 +110,15 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 %----------HEADING----------
 \begin{center}
   \textbf{\Huge\scshape Carlos Salinas} \\\vspace{10pt}
-  Mobile: \href{tel:+17653379606}{(765) 337-9606}\hfill
+  \small Mobile: \href{tel:+17653379606}{(765) 337-9606}\hfill
   GitHub: \href{https://github.com/cdrlos}{\texttt{cdrlos}}\\
-  Email: \href{mailto:cemiliosal@gmail.com}{\texttt{cemiliosal@gmail.com}}
+  \small Email: \href{mailto:cemiliosal@gmail.com}{\texttt{cemiliosal@gmail.com}}
  \hfill
  Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}
 \end{center}
 
-\section{Objective}
+% \section{Objective}
+% \small ABD PhD Mathematician seeking a position in machine learning and/or image processing. Hands-on experience with wavelet image processing, and deep learning. Can read and understand mathematics research papers.
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -131,8 +135,8 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, Julia, C++, R, Java, SQL, Matlab} \\
-     \textbf{Python Libraries}{: NumPy, Pandas, Scikit-Learn, Keras, Matplotlib}\\
+     \textbf{Programming Languages}{: Python, Julia, C++, R, Java, SQL, Matlab/Octave} \\
+     \textbf{AI Libraries/Frameworks}{: NumPy, Pandas, Scikit-Learn, Keras, Matplotlib}\\
      \textbf{Developer Tools}{: Git, Emacs, Vim, GCC, Valgrind, Gradle} \\
      \textbf{Other Software}{: Linux, LaTeX, Mathematica, Markdown, Jekyll, Bash, Awk}\\
      \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, Persian---conversant, French---proficient}
@@ -146,23 +150,23 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
       {Department of Mathematics, Purdue University}{West Lafayette, IN}
       {Research Assistant/Teaching Assistant}{Aug.\ 2014 -- May 2020}
       \resumeItemListStart
-      \resumeItem{Led recitation sections for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations, and Linear Algebra. Graded homework, wrote quizzes, and proofread exams.}
-      \resumeItem{Hosted a \href{https://www.math.purdue.edu/~salinac}{website} to post math related content for students, such as notes, links to university resources, course related deadlines, practice problems, quiz solutions, and class quiz and midterm statistics.}
-      \resumeItem{Studied finite quotients of triangle groups and nilpotent groups. Wrote a program in GAP to compute finite quotients to distinguish inequivalent triangle groups following a result by Bridson--Conder--Reid that triangle groups are profinitely rigid.}
+      \resumeItem{Led recitation for undergraduate courses, such as Calculus 1, 2, 3, Differential Equations, and Linear Algebra.}
+      \resumeItem{Hosted math related content for students on a personal university \href{https://math.purdue.edu/~salinac/}{webpage}, such as notes, quiz and midterm solutions, performance statistics, and course related deadlines.}
+      \resumeItem{Wrote code to study the finite quotients of triangle and nilpotetent groups.}
       \resumeItemListEnd
     \resumeSubheading
       {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
       {Undergraduate Research Assistant/System Administrator}{Sep.\ 2013 -- May 2014}
       \resumeItemListStart
-        \resumeItem{Managed the Experimental Algebra and Geometry Lab's Fedora cluster. Administered users and user permissions, updated software, and configured the lab's Nvidia GPU for usage in simulations requiring parallelization.}
-        \resumeItem{Wrote an program to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence of such words on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}. Presented the result at the Character Varieties and Geometry Structures Workshop held at Howard University.}
+        \resumeItem{Managed the Experimental Algebra and Geometry Lab's Linux cluster, which included administering users and users' permissions, updating software, and configuring the lab's GPU.}
+        \resumeItem{Wrote an program to compute 2-special word families up to word-length 30 using trace formulas to significantly reduce the search space. Published the sequence on the On-line Encyclopedia of Integer Sequences \href{https://oeis.org/A237623}{A237623}.}
         \resumeItemListEnd
-     \resumeSubheading
-      {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
-      {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
-      \resumeItemListStart
-        \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
-      \resumeItemListEnd
+     % \resumeSubheading
+     %  {Department of Materials Science and Engineering, Massachusetts Institute of Technology }{Cambridge, MA}
+     %  {Undergraduate Research Assistant}{Jun.\ 2010 -- Aug.\ 2010}
+     %  \resumeItemListStart
+     %    \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
+     %  \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -188,7 +192,7 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
       {School of Mathematical and Statistical Sciences, University of Texas--Pan American}{Edinburg, TX}
       {Outreach Assistant for the Experimental Algebra \& Geometry Lab}{Sep. 2012 -- May 2014}
       \resumeItemListStart
-      \resumeItem{Introduced K12 students to higher level mathematics such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities. Introduced senior members of the community to hyperbolic crocheting and non-Euclidean geometry.}
+      \resumeItem{Introduced K12 students in the Texas RGV to abstract mathematics, such as modular arithmetic, complex numbers, and spherical geometry through kinesthetic activities.}
       \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -212,7 +216,7 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
     % \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-% \section{Projects}
+\section{Writing \& Projects}
 % \resumeSubHeadingListStart
 % \resumeSubHeadingListEnd
 
