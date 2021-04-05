@@ -24,10 +24,12 @@ pdftitle={\auth - Resume v.\verno},pdfauthor={\auth}}
 % Font
 % \usepackage[default]{sourcesanspro}
 % \usepackage[scaled=.95]{sourcecodepro}
-\usepackage[default,osf]{roboto}
+\usepackage[default]{roboto}
 \usepackage[scaled=.98]{roboto-mono}
 % \usepackage[default]{FiraSans}
 % \usepackage[scaled=.98]{FiraMono}
+% \usepackage{lmodern}
+% \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
 
 \usepackage[activate={true,nocompatibility},final,tracking=true,
@@ -116,35 +118,16 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
   Linkedin: \href{https://www.linkedin.com/in/carlos-salinas-64588b160/}{\texttt{carlos-salinas-64588b160}}
 \end{center}
 
-% -----------PROGRAMMING SKILLS-----------
-\section{Objective}
-\small I am making a career transition from mathematics into something I have a growing passion for: web development with a focus on data analysis. Full-stack Clojure.
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-      \textbf{Programming Languages}{: Python, Clojure, JavaScript, Java, C++, R, Matlab}\\
-      %\textbf{AI Libraries/Frameworks}{: NumPy, Pandas, Scikit-Learn, Keras, Matplotlib}\\
-      \textbf{Developer Tools}{: Vim, Emacs, Jupyter, Git, PostgreSQL, Leiningen, Gradle} \\
+      \textbf{Programming Languages}{: Python, C++, Clojure, JavaScript, Java, R, Matlab}\\
+      \textbf{Developer Tools}{: Vim, Emacs, Jupyter, Git, PostgreSQL, Leiningen, Gradle, Valgrind} \\
       \textbf{Other Software}{: Linux, LaTeX, Markdown, Jekyll, Bash}\\
       \textbf{Natural Languages}{: English---native, Spanish---native, Russian---fluent, French---proficient}
   }}
  \end{itemize}
-
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Purdue University, West Lafayette, IN}{Aug.\ 2020}
-{Master of Science in Mathematics}{% GPA: 3.73/4.0
-}
-\resumeSubheading
-{University of Texas--Pan American, Edinburg, TX}{May 2014}
-{Bachelor of Science in Mathematics}{% GPA: 3.86/4.0
-}
-\resumeSubHeadingListEnd
-
 
  %-----------EXPERIENCE-----------
  \section{Experience}
@@ -170,6 +153,27 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
   \resumeItemListStart
     \resumeItem{Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.}
   \resumeItemListEnd
+
+ %-----------PROJECTS-----------
+ % \section{Projects}
+ % \resumeSubHeadingListStart
+ % \resumeSubItem{\href{https://evidentemente.xyz}{evidentemente.xyz}}{Full-stack Clojure wiki for personal use. Under construction.}
+ % \resumeSubItem{\href{https://cdrlos.github.io}{cdrlos.github.io}}
+ % {A small portfolio hosted on GitHub Pages. Abandoned for the former.}
+ % \resumeSubItem{\href{https://www.math.purdue.edu/~salinac}{math.purdue.edu/{\textasciitilde}salinac}}
+ % {University webpage. Mostly contains teaching material.}
+ % \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Purdue University, West Lafayette, IN}{Aug.\ 2020}
+{Master of Science in Mathematics}{GPA: 3.73/4.0}
+\resumeSubheading
+{University of Texas--Pan American, Edinburg, TX}{May 2014}
+{Bachelor of Science in Mathematics}{GPA: 3.86/4.0}
+\resumeSubHeadingListEnd
 
  % -----------Multiple Positions Heading-----------
  %    \resumeSubSubheading
@@ -224,13 +228,5 @@ kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
  % \resumeItemListEnd
  % \resumeSubHeadingListEnd
 
- %-----------PROJECTS-----------
- \section{Projects}
- \resumeSubHeadingListStart
- \resumeSubItem{\href{https://cdrlos.github.io}{cdrlos.github.io}}
- {A small portfolio hosted on GitHub Pages. Currently under construction.}
- \resumeSubItem{\href{https://www.math.purdue.edu/~salinac}{math.purdue.edu/{\textasciitilde}salinac}}
- {University webpage. Mostly contains teaching material.}
- \resumeSubHeadingListEnd
  % -------------------------------------------
  \end{document}
