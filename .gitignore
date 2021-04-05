@@ -4,9 +4,9 @@ cs-resume*.pdf
 cs-cover*.pdf
 _region_.*
 *vimtex_selected*
-Max_Ruby_Resume.pdf
-Aguilar,\ Alejandro\ (Resume)6.pdf
-
+archived-resumes/Max_Ruby_Resume.pdf
+archived-resumes/Aguilar,\ Alejandro\ (Resume)6.pdf
+archived-covers/ruben-analyst.docx.odt
 
 # Created by https://www.toptal.com/developers/gitignore/api/latex
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex
