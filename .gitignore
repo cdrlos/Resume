@@ -1,12 +1,15 @@
 auto/
-.auctex-auto
+*.auctex-auto
+Purdue/ University.zip
 cs-resume*.pdf
 cs-cover*.pdf
 _region_.*
 *vimtex_selected*
-Max_Ruby_Resume.pdf
-Aguilar,\ Alejandro\ (Resume)6.pdf
-
+experience.txt
+companies.txt
+archived_resumes/Max_Ruby_Resume.pdf
+archived_resumes/Aguilar,\ Alejandro\ (Resume)6.pdf
+archived_coverletters/ruben-analyst.docx.odt
 
 # Created by https://www.toptal.com/developers/gitignore/api/latex
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex

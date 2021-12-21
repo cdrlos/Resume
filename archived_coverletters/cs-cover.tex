@@ -1,0 +1,71 @@
+% Cover letter using letter.cls
+\documentclass[11pt]{letter} % default is 10 pt
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{datetime2}
+\def\verno{Coca-Cola Checker Application \DTMDate\today}
+% \def\verno{PNNL Job ID: 311747 \DTMDate\today}
+\hypersetup{colorlinks=true,
+urlcolor=Blue,
+pdftitle={Carlos Salinas - Cover Letter \verno},pdfauthor={Carlos Salinas}}
+
+% Font
+% \usepackage[default,osf]{sourcesanspro}
+% \usepackage[scaled=.98]{sourcecodepro}
+\usepackage[default]{roboto}
+\usepackage[scaled=.98]{roboto-mono}
+% \usepackage[default]{FiraSans}
+% \usepackage[scaled=.98]{FiraMono}
+% \usepackage{lmodern}
+% \renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page
+\textheight=8.5in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+\setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
+% \newsectionwidth{0pt}  % So the text is not indented under section headings
+
+\begin{document}
+
+\address{
+Carlos Salinas \\
+7507 Camelot Dr\\
+Mission, TX 78572\\
+{\href{tel:+17653379606}{(765) 337-9606}}\\[-15pt]}
+
+\begin{letter}{
+}
+
+\vfill % forces letterhead to top of page
+
+\opening{Dear Hiring Manager at Coca-Cola Southwest Beverages,}
+
+
+Dear USPS, 
+
+I am writing to you to express my interest in the Holiday Clerk Assistant position at your Mission--TX branch.
+
+I am a recent graduate from Purdue University where I studied mathematics; primarily theoretical mathematics, but also had the opportunity to take several statistical and applied mathematics courses. As such I'm confident that my mathematical skills will be more than enough to suit this position.
+
+As my experience section shows, I have mostly worked in education the last half decade, in particular at Purdue University. While at Purdue I was a part-time lecturer/teaching assistant where I had my hand at both making creative decisions about teaching and sticking to a rigid teaching plan (one planned out by the course organize). While there, I adhered to a strict code of conduct regarding teacher-student interactions, which I upheld with no difficulty.
+
+I have also been employed in the customer service industry where I frequently interacted with customers. As recently as four months ago I was a Home Depot employee. There I often interacted with less than polite customers who were either having difficulty finding a particular product or wanted assistance choosing a product. My approach has been—as always—a measured approach, getting the facts right, and seeing if there is anything we have which might satisfy the customer.
+
+I am confident that my work experiences is sufficient for this position and that you will find in me a dutiful and thoughtful employee who never misses work. 
+
+I eagerly await to hear from you.
+
+Sincerely, 
+Carlos Salinas
+
+\closing{Sincerely,\\[5pt]
+Carlos Salinas}
+\end{letter}
+\end{document}

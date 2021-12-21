@@ -1,19 +1,63 @@
-TA
+######## Experience #############
 
-• Instructed undergraduate calculus 2.
-• Held recitation and office hours for calculus 1, 2, and 3 courses.
-• Assigned final scores based on the student’s cumulative performance using spread sheets.
-• Graded differential equations and linear algebra courses at the undergraduate and graduate level.
-• Created and updated a university website to post notes and solutions to recitation related problems.
+TELUS International
+Map Analyst
+Remote
+Jan. 2021 – present
+• Determine relevance and accuracy of map search results as part of an AI app pipeline.
+• Determine accuracy of business information such as address, unit number, phone number, hours of operation and current operation status doing online research.
 
-RA
-• Wrote Mathematica code to study traces in character varieties.
-• Discovered a possible correspondence between 2-special pairs and pairs of orientable necklaces.
-• Published the associated sequence in the On-line Encyclopedia of Integer Sequences under A237623.
-• Presented results at Howard University’s Workshop on Character Varieties and Geometric Structures.
+The Home Depot
+Seasonal Garden Associate
+Lafayette, IN
+Mar. 2021 – Jun. 2021
+• Engage customers using the GET method. Provide product information and availability.
+• Pack down the shelves and displays if possible. Assess product availability using company RF scanner.
+• Operate fork lift or order picker outside store to load large customer orders, unload shipments for outside garden product, and to bring down or put up product in the overhead.
 
-Admin
-• Administrated the department’s Experimental Algebra and Geometry Lab’s Fedora cluster.
-• Maintained an operational CUDALink computing station for doing Mathematica simulations.
-• Operated and updated the lab’s 3D printer.
-• Engaged with local schools in math and geometry related outreach activities.
+Purdue University
+Teaching Assistant
+West Lafayette, IN
+Aug. 2014 – Aug. 2020
+• Led recitation for undergraduate math courses, including Calculus 1, 2, 3, Differential Equations and Linear Algebra.
+•  Published course-related content for students, such as lesson notes, quizzes, quiz, and midterm solutions, and score statistics to a university-hosted website.
+• As a researcher, wrote notebooks to study the finite quotients of triangle and the free nilpotent group.
+
+University of Texas–Pan American
+Undergraduate Research Assistant/System Administrator
+Edinburg, TX
+Sep. 2013 – May 2014
+• Managed the Experimental Algebra and Geometry Lab’s Linux cluster, which included administering users, installing software, running services, and configuring the lab’s GPU for use with Mathematica’s CUDALink.
+• Wrote an program to compute 2-special word families up to word-length 30 which leveraged the existence of trace formulas and dependence on lower order polynomials to reduce the search space. Published the sequence on the On-line Encyclopedia of Integer Sequences A237623.
+
+H-E-B
+Overnight Stocker
+Pharr, TX
+Sep. 2011 – Dec 2011
+• Walk designated aisles and start recovery, i.e. ensure merchandise is well stocked, in its proper place, and presentable; ensure shelves and displays maintain a clean, presentable looks.
+• Discuss nightly goals and tasks with stock controller.
+• Spot depleting product in the aisles and replenish products onto shelves.bulk product with the assistance of a pallet jack if necessary.
+
+Massachusetts Institute of Technology
+Undergraduate Research Assistant
+Cambridge, MA
+Jun. 2010 – Aug. 2010
+• Tested heat-treated Ti-Ta alloys of varying compositions for shape-memory and superelastic properties by means of hot oil recovery test. Took metallographs of samples to study the microstructure. Performed of mechanical tests, such as tensile test, and fatigue tests, and recorded the results.
+
+######### Outreach Experience #############
+
+Purdue University
+Academic Boot Camp for Purdue’s Minority Engineering Program
+West Lafayette, IN
+Jun. 2018 – Aug. 2018
+• Simulated a first semester Calculus experience for incoming undergraduate students in the MEP. Prepared and graded student homework and midterms. Assigned final letter grades and gave course recommendations based on student perfromance.
+
+University of Texas–Pan American
+Outreach Assistant for the Experimental Algebra & Geometry Lab
+Edinburg, TX
+Sep. 2012 – May 2014
+• Introduced K12 students to interesting topics in higher mathematics, such as modular arithmetic, complex numbers, and spherical and hyperbolic geometry through kinesthetic activities.
+
+
+## References
+Dominic Naughton 765-494-1906
