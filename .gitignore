@@ -5,11 +5,17 @@ cs-resume*.pdf
 cs-cover*.pdf
 _region_.*
 *vimtex_selected*
+<<<<<<< HEAD
 experience.txt
 companies.txt
 archived_resumes/Max_Ruby_Resume.pdf
 archived_resumes/Aguilar,\ Alejandro\ (Resume)6.pdf
 archived_coverletters/ruben-analyst.docx.odt
+=======
+archived-resumes/Max_Ruby_Resume.pdf
+archived-resumes/Aguilar,\ Alejandro\ (Resume)6.pdf
+archived-covers/ruben-analyst.docx.odt
+>>>>>>> 62304bb5a7169b41ec30daf4a405bad334f0118d
 
 # Created by https://www.toptal.com/developers/gitignore/api/latex
 # Edit at https://www.toptal.com/developers/gitignore?templates=latex
